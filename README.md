@@ -8,3 +8,5 @@ Website hosted as a static site on Amazon S3
 Details to follow.
 
 Contact me on github (@michaelh23) for questions.
+
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.

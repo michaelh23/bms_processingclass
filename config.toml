@@ -1,0 +1,80 @@
+baseurl = "http://processingclass.michaelhelmke.org/"
+languageCode = "en-us"
+title = "Ms Elwell's Coding Class "
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+	# General information
+	author = "Chris Elwell"
+	description = "Classroom documentation for Ms Elwell's Coding Class"
+	copyright = "Released under the MIT license"
+
+	# Repository
+	#provider = "GitHub"
+	#repo_url = "https://github.com/digitalcraftsman/hugo-material-docs"
+
+	version = "0.1.1"
+	logo = "images/bms_coding_logo2.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "indigo"
+    	accent  = "lime"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = ""
+	github  = ""
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 0
+
+[[menu.main]]
+    name    = "Class Outline"
+    url     = "outline/"
+    weight  = 10
+
+[[menu.main]]
+    name    = "Activities"
+    url     = "activities/"
+    weight  = 15
+
+#[[menu.main]]
+#    name    = "Examples"
+#    url     = "examples/"
+#    weight  = 20
+
+[[menu.main]]
+    name    = "Resources"
+    url     = "resources/"
+    weight  = 30
+
+#[[menu.main]]
+#    name    = "Learning More"
+#    url     = "learning_more/"
+#    weight  = 100
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
