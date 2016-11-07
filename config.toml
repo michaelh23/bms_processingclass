@@ -58,6 +58,11 @@ googleAnalytics = ""
     url     = "activities/"
     weight  = 15
 
+[[menu.main]]
+    name    = "Special Topics"
+    url     = "special_topics/"
+    weight  = 20
+
 #[[menu.main]]
 #    name    = "Examples"
 #    url     = "examples/"

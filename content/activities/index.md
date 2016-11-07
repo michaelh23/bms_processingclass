@@ -57,9 +57,15 @@ What color will each of the following lines of code generate?
 
 ## Activity 5
 
-On graph paper, design/draw a creature of your own using the shapes you have learned so far.  Color your creature including the outline colors.
+Fix the errors in the following code statements:
 
-Once you have drawn a creature on your graph paper and colored it, take out a piece of lined paper and begin writing the code for your creature.
+![Exercise 2-6](/images/activities/exercise2-6.png)
+
+## Activity 6
+
+On graph paper, design/draw a creature/character of your own using the shapes you have learned so far.  Color your creature including the outline colors.
+
+Once you have drawn a creature/character on your graph paper and colored it, take out a piece of lined paper and begin writing the code for your creature.
 
 background(); //comes first
 
@@ -70,18 +76,9 @@ Color Functions:  stroke(), fill(), background(), noStroke(), noFill()
 
 When using RGB in your stroke, fill, and background, be purposeful and know what color you are trying to make and document it in your comment 
 
-Include ALPHA (opacity) by adding a fourth argument to your color code line.
-
 Use COMMENTS for EVERY part of your drawing so you know what your code is doing and remember to include what color you intend.
 
 Have fun!!
-
-## Activity 6
-
-Fix the errors in the following code statements:
-
-![Exercise 2-6](/images/activities/exercise2-6.png)
-
 
 ## Activity 7
 
