@@ -59,26 +59,78 @@ What color will each of the following lines of code generate?
 
 Fix the errors in the following code statements:
 
-![Exercise 2-6](/images/activities/exercise2-6.png)
+
+	// 1.
+	background(); 
+
+	// _______________________________________________
+
+	// 2.
+	stroke 255;
+
+	// _______________________________________________
+
+	// 3.
+	fill(150)
+
+	// _______________________________________________
+
+	// 4.
+	rectMode(center);
+
+	// _______________________________________________
+
+	// 5.
+	function draw()
+
+	}           
+
+	// _______________________________________________
+
+	// 6.
+	createCanvas(windowWidth, Height);
+
+	// _______________________________________________
+
+	// 7.
+	line(100, 130, 210);
+
+	// _______________________________________________
+
+	// 8.
+	noStroke( ;
+
+	// _______________________________________________
+
+	// 9.
+	fill(255,0);
+
+	// _______________________________________________
+
+	// 10.
+	rect(100,100,50)
+
+	// _______________________________________________
 
 ## Activity 6
 
-On graph paper, design/draw a creature/character of your own using the shapes you have learned so far.  Color your creature including the outline colors.
+On graph paper, design/draw a creature of your own using the shapes you have learned so far.  **Only use up to six shapes and up to four lines**.  Color your creature including the outline colors.  **Name** your creature
+ 
+Once you have drawn a creature on your graph paper and colored it, take out a piece of lined paper and begin writing the code for your creature.
+ 
+- background() comes first
+ 
+- stroke(), fill(), etc. comes above the object or line you want to affect.
+ 
+- Drawing Functions:  point(), line(), rect(), rectMode(), ellipse(), triangle()
 
-Once you have drawn a creature/character on your graph paper and colored it, take out a piece of lined paper and begin writing the code for your creature.
+- Color Functions:  stroke(), fill(), background(), noStroke(), noFill()
+ 
+When using RGB in your stroke, fill, and background, be purposeful and know what color you are trying to make and describe it in your comment
 
-background(); //comes first
-
-stroke(), fill(), etc. comes above the object or line you want to effect.
-
-Drawing Functions:  point(), line(), rect(), rectMode(), ellipse(), triangle()
-Color Functions:  stroke(), fill(), background(), noStroke(), noFill()
-
-When using RGB in your stroke, fill, and background, be purposeful and know what color you are trying to make and document it in your comment 
-
-Use COMMENTS for EVERY part of your drawing so you know what your code is doing and remember to include what color you intend.
-
-Have fun!!
+Look back to the <a href="/outline/#graphing-shapes">Class Outline</a> if you need a reminder about how to use rect, line, ellipse, etc.
+ 
+**Use COMMENTS for EVERY part of your drawing so you know what your code is doing and remember to include what color you intend.**
 
 ## Activity 7
 

@@ -83,18 +83,41 @@ Color Functions:  stroke(), fill(), background()
 
 ### RGB
 
-Color described in terms of Red, Green, and Blue parts.
+Computers view color in terms of Red, Green, and Blue light (RGB) and this can be confusing at first.  You are probably more used to color from mixing paint like knowing that mixing yellow and blue makes green.
 
-0 = none of the color     255 = all of the color
+Mixing colors of light works differently as you can see below:
 
-- Bright red: (255, 0, 0)
-- Dark red: (127, 0, 0)
-- Pale pink: (255,200,200)
+![RGB image](/images/figures/AdditiveColor.svg)
 
-![Figure 1-18](/images/figures/figure1-18.jpg)
+RGB color can be understood as all colors that can be made up of shining a Red, Green, and Blue light on a wall and adjusting the lights with dimmer switches.  If only red is on, the wall looks red.  If red and green are on, the wall will look yellow (see above).  Dimming the lights will change the intensity of the light.  For example the following code:
+
+	function setup() {
+	  createCanvas(windowWidth, windowHeight); 
+	  
+	} 
+
+	function draw() {
+	  background(255, 255, 255);
+	  
+	  fill(148, 222, 254);
+	  rect(300,300,50,50);
+
+	  fill(148*.8, 222*.8, 254*.8);
+	  rect(300,360,50,50);
+
+	  fill(148*.6, 222*.6, 254*.6);
+	  rect(300,420,50,50);
+	}
+
+will produce this:
+
+![Color Squares](/images/figures/color_squares.png)
+
+You should be able to see how to experiment from here to produce other colors.  There are also charts of RGB colors and their common names on the web that you can find if you search for them.
+
 
 ### Complete Activity 4
- 
+
 ## Parts of Code
 
 There are 3 kinds of statements:  Function calls, Assignment Operations, and Control Structures
@@ -108,3 +131,57 @@ So far, we've been doing **function calls**.
 - each statement ends with a semicolon ';' character
 
 ### Complete Activity 5
+
+## Create Creature/Character
+
+For this part, you are going to design/draw a creature of your own using the shapes you have learned so far.  I want you to keep your design fairly simple since the point here is to learn how to turn your design into code you can run and see on the screen.
+
+### Complete Activity 6
+
+## OpenProcessing.org Sketches
+
+To start coding with a new sketch, we start with a function, ``setup`` to get everything prepared:
+ 
+	function setup() {
+	    createCanvas(windowWidth, windowHeight);  
+	} 
+ 
+This sets the size of the window our drawings will appear.  Although we used a 400x400 graph grid, once we write our code it’s useful to have a much bigger window than to be restricted to a small grid.
+ 
+Then, we need to add our code to a function called ``draw``:
+ 
+	function draw() {
+	  rect (200, 200, 50, 50);		//head
+	  ellipse (190, 190, 10, 10);	//eye left
+	  ellipse (210, 190, 10, 10);	//eye right
+	}
+ 
+Remember to **comment** your code with two slashes ``//``
+ 
+If you want a longer comment, you can do this:
+
+	//* this is a comment that spans
+	more than one line of code  */
+ 
+Remember:
+
+- the computer READS the instructions (your code) from top down and does exactly what you tell it to do. 
+
+- No space between the function name and the arguments. ``line();`` not ``line ();``
+
+- Once you’ve entered your program, you will click on the RUN button (like a START arrow on a video).  If nothing shows up, there is an error in your code.  Time to proofread what you typed and find any mistakes.
+
+- The computer can only do what it is told, it does not think for itself.
+
+- Processing is CASE SENSITIVE and does NOT do spellcheck for you.
+
+### Complete Activity 7
+
+
+
+
+
+
+
+
+
