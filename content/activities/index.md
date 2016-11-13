@@ -134,7 +134,9 @@ Look back to the <a href="/outline/#graphing-shapes">Class Outline</a> if you ne
 
 ## Activity 7
 
-Using the sketchbook on www.openprocessing.org you will write your code for your creature and see if it will run :-)
+Go to your account on www.openprocessing.org, create a new sketch and type in the code for your creature and see if it will run.  :-)
+
+If it doesn't, try to determine what is wrong.
 
 
 
