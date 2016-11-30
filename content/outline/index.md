@@ -62,9 +62,9 @@ Circles have an implicit bounding box around them.
 
 ![Figure 1-11](/images/figures/figure1-11.jpg)
 
-### Complete Activity 1
+### <a href="http://processingclass:8888/activities/#activity-1"><b>Complete Activity 1</b></a>
 
-### Complete Activity 2
+### <a href="http://processingclass:8888/activities/#activity-2"><b>Complete Activity 2</b></a>
 
 
 ## Color
@@ -79,7 +79,7 @@ Describing color in terms of black, white, and grey in between.
 
 Color Functions:  stroke(), fill(), background()
 
-### Complete Activity 3
+### <a href="http://processingclass:8888/activities/#activity-3"><b>Complete Activity 3</b></a>
 
 ### RGB
 
@@ -116,7 +116,7 @@ will produce this:
 You should be able to see how to experiment from here to produce other colors.  There are also charts of RGB colors and their common names on the web that you can find if you search for them.
 
 
-### Complete Activity 4
+### <a href="http://processingclass:8888/activities/#activity-4"><b>Complete Activity 4</b></a>
 
 ## Parts of Code
 
@@ -130,13 +130,13 @@ So far, we've been doing **function calls**.
 - the arguments to the functions are surrounded by parenthesis
 - each statement ends with a semicolon ';' character
 
-### Complete Activity 5
+### <a href="http://processingclass:8888/activities/#activity-5"><b>Complete Activity 5</b></a>
 
 ## Create Creature/Character
 
 For this part, you are going to design/draw a creature of your own using the shapes you have learned so far.  I want you to keep your design fairly simple since the point here is to learn how to turn your design into code you can run and see on the screen.
 
-### Complete Activity 6
+### <a href="http://processingclass:8888/activities/#activity-6"><b>Complete Activity 6</b></a>
 
 ## OpenProcessing.org Sketches
 
@@ -175,13 +175,102 @@ Remember:
 
 - Processing is CASE SENSITIVE and does NOT do spellcheck for you.
 
-### Complete Activity 7
+### <a href="http://processingclass:8888/activities/#activity-7"><b>Complete Activity 7</b></a>
+
+## Special Variables
+
+*Variables* will be covered in the next section.  In short, they let you store and retrieve information in the computer memory.  For now we will start with some special variables that the Processing language provides.
+
+```mouseX``` and ```mouseY``` are variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
+
+	function setup() {
+	  createCanvas(windowWidth, windowHeight); 
+	  
+	} 
+
+	function draw() {
+	  background(100);  // moved down from setup() so we don't get trails
+	  ellipse(mouseX, mouseY, 20, 20);
+	}
+
+When you run this sketch, you will see a circle following the mouse.  Why? because the position of the ellipse is set using ```mouseX``` and ```mouseY```.  Every time we go through the ```draw()``` function and call ellipse, the variables ```mouseX``` and ```mouseY``` have the current mouse position.
+
+To explore another way to use these system variables, to the next activity.
+
+### <a href="http://processingclass:8888/activities/#activity-8"><b>Complete Activity 8</b></a>
+
+## Variables
+
+So far you have been making shapes by calling functions like ``rect(...)`` or ``ellipse(...)`` and entering exact numbers for each of the function arguments.
+
+You can also use variables to store information to be used later.  A variable is like a cubbyhole in the computer memory where you can store things.
+
+You create a variable like this:
+
+	var x;
+
+That creates a variable called x that you can put numbers or letters into:
+
+	x = 23;
+	rect(x, 25, 50, 50);
+
+In that example, we assign the number 23 to the variable called ``x``.  In the following ``rect(...)`` function call, we use the variable ``x`` as the first argument to ``rect(...)``.  That is the same as doing this:
+
+	rect(23, 25, 50, 50);
+
+Here are some more examples.  Make sure you understand why each variable has the stated value.  Ask if you don't:
+
+	var x, y, a, b;
+
+	x = 5;
+	a = 10;
+	b = 20;
+	y = a + b; // y equals 30
+	x = y - 10 * 20; // before, x equaled 5, now x equals 400
+	x = x * 5; // now x = 2000
+
+So great, we can do math now and store the results to use later.
+
+What do you think this next program does?
+
+	var circleX = 100;
+	var circleY = 100;
+
+	function setup() {
+		createCanvas(windowWidth,windowHeight);
+	}
+
+	function draw() {
+		background(255);
+		stroke(0);
+		fill(175);
+		ellipse(circleX, circleY, 50,50);
+
+		circleX = circleX + 1
+	}
+
+A circle of diameter 50 will first be drawn at position (100,100).  Then it will move to the right as ``circleX`` is increased.  Each time the system calls the ``draw()`` function, ``circleX`` will be increased by 1.
+
+Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the new value will be stored until the next time it is used.
+
+### <a href="http://processingclass:8888/activities/#activity-9"><b>Complete Activity 9</b></a>
+
+## Operator Precedence
+
+When you add or subtract or multiply, the +, -, *, and / (for divide) symbols are called *operators*.
+
+You may know from math that some operators are always done before others.  For example:
+
+	2 + 3 * 4 = 14 (not 20)
+
+because multipication is always done before addition.  *Processing* is the same way.  Multiplication and division are always done first and then addition and subtraction.  You can use parenthesis to change the order.  Operations in parenthesis are always done first.  For example:
+
+	(2 + 3) * 4 = 20 (parenthesis first)
+
+This next activity touches slightly on operator precedence though is mostly about following the value of variables:
+
+### <a href="http://processingclass:8888/activities/#activity-10"><b>Complete Activity 10</b></a>
 
 
 
-
-
-
-
-
-
+.

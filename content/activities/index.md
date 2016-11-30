@@ -138,7 +138,102 @@ Go to your account on www.openprocessing.org, create a new sketch and type in th
 
 If it doesn't, try to determine what is wrong.
 
+## Activity 8
+
+Create a new sketch and draw an ice cream cone using a triangle and an ellipse.  The color of the ice cream should be influenced by the ```mouseX``` and ```mouseY``` variables.  I.e. the color of the ice cream should change when you move the mouse.
+
+Make sure the ice cream is *inside* the cone (not on top of the cone).
+
+### Discussion questions: 
+
+When you move the mouse, are there areas of the screen where the mouse doesn't change the ice cream color?  Why?
+
+- (Advanced/Not Required:  Check out the <a href="http://p5js.org/reference/#/p5/map">"map()"</a> function at p5js.org for a way around this...)
+
+Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
+
+
+## Activity 9
+
+Change the following program so that instead of the circle moving from left to right as in the class outline, the circle grows in size.
+
+	var circleSize=5;
+	var circleX=100;
+	var circleY=100;
+
+	function setup() {
+		createCanvas(windowWidth,windowHeight);
+	}
+
+	function draw() {
+		background(0);
+		stroke(255);
+		fill(175);
+
+		// fill in your code here
+	}
+
+What would you change to have the circle follow the mouse as it grows?  How could you vary the speed at which the circle grows?	
+
+## Activity 10
+
+For each of the following examples, answer the questions:
+
+	// 1.
+
+	var x = 20;
+	var y = 30;
+	var z, q;
+
+	z = x + y;  // (a)
+	q = z - x;
+	y = 40;
+	z = x + y;  // (b)
+
+	// what is the value of z at (a):________________________________
+
+	// what is the value of q:_______________________________________
+
+	// what is the value of z at (b):________________________________
+
+	// 2.
+
+	var x = 1;
+	var y = 2;
+	var z = 3;
+	var p, q, r;
+
+	p = x + y;
+	q = y * 2 + z;
+	r = x + y * z;
+
+	// what is the value of p: ______________________
+
+	// what is the value of q: ______________________
+
+	// what is the value of r: ______________________
+
+	// 3.
+
+	var x = 10;
+	var y = 30;
+	var z = 25;
+	var a, b;
+
+	a = x + y + z;
+	x = x + y;
+	z = x + y;
+	b = a + z;
+
+	// by the end...
+	// what is the value of a:__________________
+
+	// what is the value of x:__________________
+
+	// what is the value of z:__________________
+
+	// what is the value of b:__________________
 
 
 
-
+.
