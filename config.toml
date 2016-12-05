@@ -58,25 +58,10 @@ googleAnalytics = ""
     url     = "activities/"
     weight  = 15
 
-#[[menu.main]]
-#    name    = "Special Topics"
-#    url     = "special_topics/"
-#    weight  = 20
-
-#[[menu.main]]
-#    name    = "Examples"
-#    url     = "examples/"
-#    weight  = 20
-
 [[menu.main]]
     name    = "Resources"
     url     = "resources/"
     weight  = 30
-
-#[[menu.main]]
-#    name    = "Learning More"
-#    url     = "learning_more/"
-#    weight  = 100
 
 [blackfriday]
 	smartypants	= true

@@ -177,9 +177,19 @@ What would you change to have the circle follow the mouse as it grows?  How coul
 
 ## Activity 10
 
+Create one shape (ellipse or rect) and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
+
+Make it so that at least the following items change:  color, x, and y
+
+Once that works, try changing the color so that it's not just greyscale.
+
+Name your sketch:  AllVarChange
+
+## Activity 11
+
 For each of the following examples, answer the questions:
 
-	// 1.
+	// 1. Given the following code:
 
 	var x = 20;
 	var y = 30;
@@ -190,13 +200,15 @@ For each of the following examples, answer the questions:
 	y = 40;
 	z = x + y;  // (b)
 
-	// what is the value of z at (a):________________________________
+	// Answer:
 
-	// what is the value of q:_______________________________________
+	// 1a. what is the value of z at (a):________________________________
 
-	// what is the value of z at (b):________________________________
+	// 1b. what is the final value of q:_________________________________
 
-	// 2.
+	// 1c. what is the value of z at (b):________________________________
+
+	// 2.  Given the following code:
 
 	var x = 1;
 	var y = 2;
@@ -207,13 +219,15 @@ For each of the following examples, answer the questions:
 	q = y * 2 + z;
 	r = x + y * z;
 
-	// what is the value of p: ______________________
+	// Answer:
 
-	// what is the value of q: ______________________
+	// 2a. what is the final value of p: ______________________
 
-	// what is the value of r: ______________________
+	// 2b. what is the final value of q: ______________________
 
-	// 3.
+	// 2c. what is the final value of r: ______________________
+
+	// 3.  Given the following code:
 
 	var x = 10;
 	var y = 30;
@@ -225,15 +239,62 @@ For each of the following examples, answer the questions:
 	z = x + y;
 	b = a + z;
 
-	// by the end...
-	// what is the value of a:__________________
+	// Answer: 
 
-	// what is the value of x:__________________
+	// 3a. what is the final value of a:__________________
 
-	// what is the value of z:__________________
+	// 3b. what is the final value of x:__________________
 
-	// what is the value of b:__________________
+	// 3c. what is the final value of z:__________________
 
+	// 3d. what is the final value of b:__________________
 
+## Activity 12
+
+Create a circle or square (w and h are the same) and declare a variable for ALL the parts and make the parts random(255) as was demonstrated to you.
+
+Name your sketch: RandomShapes
+
+## Activity 13
+
+Open your character/creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  
+
+Save a Fork and name it RandomCreature.  
+
+Do the following:
+ 
+- Take out mouseX and mouseY and put in the original value for the var.
+
+- Set your framerate to 5 in `setup()`: `frameRate(5);`
+
+- Choose a part of your character/creature that you want to make change color randomly.
+
+- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (ex:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.  Declare these variable just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable labels.
+
+Does your character now have a body part that changes colors randomly?
+ 
+If you would like your character to begin in the center of your screen, inside the setup function, set your x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
+ 
+Then, let’s make your character begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]
+
+Add an increment that would bring your character from the bottom of the screen up on the y-axis.
+
+## Activity 14
+
+Think about a grading system where numbers are turned into letters.  Fill in the blanks in the following code to complete the boolean expressions.
+
+	var grade = random(0,100);
+
+	if (__________) {
+		println("Assign letter grade A.");
+	} else if (__________) {
+		println(________________);
+	} else if(_____________) {
+		println(________________);
+	} else if(_____________) {
+		println(________________);
+	} else {
+		println(________________);
+	}
 
 .

@@ -255,6 +255,8 @@ Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the
 
 ### <a href="http://processingclass:8888/activities/#activity-9"><b>Complete Activity 9</b></a>
 
+### <a href="http://processingclass:8888/activities/#activity-10"><b>Complete Activity 10</b></a>
+
 ## Operator Precedence
 
 When you add or subtract or multiply, the +, -, *, and / (for divide) symbols are called *operators*.
@@ -269,8 +271,137 @@ because multipication is always done before addition.  *Processing* is the same 
 
 This next activity touches slightly on operator precedence though is mostly about following the value of variables:
 
-### <a href="http://processingclass:8888/activities/#activity-10"><b>Complete Activity 10</b></a>
+### <a href="http://processingclass:8888/activities/#activity-11"><b>Complete Activity 11</b></a>
 
+## Random
+
+Random is a special type of Function that returns a value.
+ 
+For example:  
+ 
+- Me:  Hey random, what’s going on?  Hope you’re well.  Hey, I was wondering... could you give me a random number between 1 and 100?
+- Random:  Sure, no problem.  How about the number 63?
+- Me:  Awesome!  That’s great, thank you.
+
+In code, this would look like:
+ 
+	var w = random(1, 100);
+	rect(100, 100, w, 50);
+ 
+The random() function requires two arguments.  It returns a random number ranging from the first argument to the second argument.  The second argument must be larger than the first argument for it to work properly.  The function random() also works with one argument by assuming a range between ZERO and that argument, such as `random(6)` which will return a random number between 0 and 6.
+
+### <a href="http://processingclass:8888/activities/#activity-12"><b>Complete Activity 12</b></a>
+
+### <a href="http://processingclass:8888/activities/#activity-13"><b>Complete Activity 13</b></a>
+
+
+## Booleans and if/else Statements
+ 
+A Boolean expression (named for the mathematician George Boole) is an expression that can be either `true` or `false`.
+
+For example:
+ 
+My favorite color is blue == true
+I am afraid of the dark == false
+Coding is fun after all == true
+ 
+In the logic of computers, we test relationships between number:
+ 
+	15 is greater than 20 == false
+	5 equals 5 == true
+	32 is less than or equal to 33 == true
+ 
+let’s think of this in terms of code and variables:
+ 
+	x > 20 – depends on the current value of x
+	y == 5 – depends on the current value of y
+	z <= 33 – depends on the current value of z
+ 
+The following are standard boolean operations in Processing:
+ 
+	>    greater than
+	<    less than
+	>=   greater than or equal to
+	<=   less than or equal to
+	==   equal to
+	!=   not equal to
+
+This is an example of an `if` statement:
+ 
+	if (Boolean expression) {
+		//code to execute if Boolean expression is true
+	}
+ 
+for example:
+
+	function setup() {
+		createCanvas(windowWidth, windowHeight); 
+	} 
+
+	function draw() {
+		background(0);  
+		if (mouseX < windowWidth/2) {
+			fill(255);
+			rect(0, 0, windowWidth/2, windowHeight);
+		}  
+	}
+
+This will make the left half of the screen white when the mouse is on the left:
+
+![Figure 5-1](/images/figures/Figure5-1.png)
+
+You can add an `else` statement to run code when the `if` condition is `false`:
+
+If the Boolean expression is FALSE you would add
+ 
+	if (Boolean expression) {
+		//code to execute if expression is true
+	} else {
+		//code to execute if expression is false
+	}
+ 
+Continuing our example from above, observe:
+to continue the example:
+ 
+	function setup() {
+		createCanvas(windowWidth, windowHeight); 
+	} 
+
+	function draw() {
+		if (mouseX < windowWidth/2) {
+			background(255);
+		} else {
+			background(0);
+		}
+	}
+ 
+By putting it all together, you should see white when the mouse is on the left half of the screen and black when the mouse is on the right half of the screen:
+ 
+![Figure 5-2](/images/figures/Figure5-2.png)
+ 
+When you want to test for MULTIPLE conditions, you use “else if”.  Once an expression is found to be true, the corresponding code is executed and the remaining Boolean expressions are ignored.
+ 
+![Figure 5-3](/images/figures/Figure5-3.png)
+ 
+To continue our example above, we could write the following:
+ 
+	function setup() {
+		createCanvas(windowWidth, windowHeight); 
+	} 
+
+	function draw() {
+        if (mouseX < windowWidth/3) {
+			background(255);
+        } else if (mouseX < 2*windowWidth/3 {
+			background(127);
+        } else {
+			background(0);
+        }
+	}
+ 
+![Figure 5-4](/images/figures/Figure5-4.png)
+
+### <a href="http://processingclass:8888/activities/#activity-14"><b>Complete Activity 14</b></a>
 
 
 .
