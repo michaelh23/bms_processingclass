@@ -297,4 +297,148 @@ Think about a grading system where numbers are turned into letters.  Fill in the
 		println(________________);
 	}
 
+## Activity 15
+
+	// 1. Given the following code:
+
+	var x = 2;
+	var y = 3;
+	var z = 4;
+	var q;
+
+	x = y + z;
+	y = x - z;
+	z = x + y;
+	z = z - y + x;
+
+	// Answer and show your work:
+
+	// 1a. What is the final value of x:
+	// 1b. What is the final value of y:
+	// 1c. What is the final value of z:
+
+	// 2. Given the following code:
+
+	var x = 10;
+	var y = 10;
+	var z = 20;
+	var r;
+
+	x = x + y;
+	r = y + z;
+	r = r - z;
+	y = r + x;
+
+	// Answer and show your work:
+
+	// 2a. What is the final value of x:
+	// 2b. What is the final value of y:
+	// 2c. What is the final value of r:
+
+
+	// 3. Given the following code:
+
+	var x = 20;
+	var y = 30;
+
+	x = x + y; // (a)
+	y = x - y;
+	x = x - y; // (b)
+
+	// Answer and show your work:
+
+	// 3a. What is the value of x at (a):
+	// 3b. What is the final value of y:
+	// 3c. What is the value of x at (b):
+
+	// 4. Given the following code:
+
+	var x = 10;
+	var y = 20;
+	var z = 30;
+	var r, q;
+
+	r = y + z;
+	q = r;
+	r = r - x; // (a)
+	q = q + r;
+
+	// Answer and show your work:
+
+	// 4a. What is the value of r at (a):
+	// 4b. What is the final value of q:
+
+	// 5. Given the following code:
+
+	var x = 10;
+	var y = 20;
+	var z = 30;
+
+	y = y + x;
+	x = x + z;
+	z = 5;
+	y = y + x;
+	x = x + z;
+
+	// Answer and show your work:
+
+	// 5a. What is the final value of y:
+	// 5b. What is the final value of x:
+
+	// 6. Given the following code:
+
+	var x = 10;
+	var y = 30;
+	var z = 50;
+	var p, q;
+
+	q = z - x; // (a)
+	p = 10;
+	x = x + p;
+	p = z - x;
+	q = p + y; // (b)
+
+	// Answer and show your work:
+
+	// 6a. What is the value of q at (a):
+	// 6b. What is the final value of x;
+	// 6c. What is the final value of p:
+	// 6d. What is the value of q at (b):
+
+	// 7. Given the following code:
+
+	var x = 1;
+	var y = 2;
+	var z = 3;
+	var p, q;
+
+	p = z + y + x;   // (a)
+	q = (z * y) + x; // (b)
+	z = x;
+	p = z + y + x;   // (c)
+	q = (z * y) + x; // (d)
+
+	// Answer and show your work:
+
+	// 7a. What is the value of p at (a):
+	// 7b. What is the value of q at (b):
+	// 7c. What is the value of p at (c):
+	// 7d. What is the value of q at (d):
+
+	// 8. Make a new sketch at openprocessing.org and
+	// write a program to swap two numbers.  Here is a
+	// starting point:
+
+	var x = 10;
+	var y = 20;
+
+	// your code here:
+
+	if(x == 20 && y == 10) {
+	    println("x and y were swapped");
+	} else {
+	    println("something went wrong");
+	}
+
+
 .

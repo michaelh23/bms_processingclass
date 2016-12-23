@@ -7,25 +7,29 @@ title: Class Outline
 
 For many of these exercises it will help to have graph paper.  If you don't have any, you can download and print this page of <a href="/images/graphpaper_85x11.pdf" target="_blank">graph paper</a>
 
+Note that in Processing, we set the grid origin (0,0) point in the upper left corner.  Also note that increasing values of Y go down rather than up like you have seen in your math class.  This is ok and has to do with how computer displays are normally programmed.
+
 ### Drawing Functions:  point(), line(), rect(), ellipse()
 
-The **point** function at the given x and y location on the screen:
+The **point** function draws a point at the given x and y location on the screen.  Coordinates are *always* given in (x,y) order:
 
 	point(4,5);
 
-![Figure 1-5](/images/figures/figure1-5b.jpg)
+![Figure 1-5](/images/figures/PointDiagram.png)
 
 The **line** function draws a line between two x and y locations on the screen:
 
 	line(1,3,8,3);
 
-![Figure 1-6](/images/figures/figure1-6.jpg)
+The first two arguments "1,3" are the start point of the line and the last two arguments "8,3" are the end point of the line:
 
-The **rect** function draws a rectangle.  The upper left corner is *normally* specified by the x and y locations.  The next to parameters are the width and height of the rectangle.
+![Figure 1-6](/images/figures/LineDiagram.png)
+
+The **rect** function draws a rectangle.  The upper left corner is *normally* specified by the x and y locations.  The next two parameters are the width and height of the rectangle.
 
 	rect(2,3,5,4);
 
-![Figure 1-7](/images/figures/figure1-7.jpg)
+![Figure 1-7](/images/figures/RectDiagram.png)
 
 However, if you use the **rectMode** function, you can change how the rectangle is drawn.  If you use
 
@@ -34,7 +38,7 @@ However, if you use the **rectMode** function, you can change how the rectangle 
 
 then the x,y parameters of **rect** will be the center of the rectangle:
 
-![Figure 1-8](/images/figures/figure1-8.jpg)
+![Figure 1-8](/images/figures/RectCentDiagram.png)
 
 And if you use a **rectMode** of *CORNERS* as in:
 
@@ -43,20 +47,23 @@ And if you use a **rectMode** of *CORNERS* as in:
 
 Then the first pair of parameters are the upper left corner of the rectangle and the 2nd pair of parameters are the lower right corner of the rectangle.  (**Note**:  the default **rectMode** is **CORNER**).
 
-![Figure 1-9](/images/figures/figure1-9.jpg)
+![Figure 1-9](/images/figures/RectCornerDiagram.png)
 
 The **ellipse** function is similar to **rect** except it draws *circles* and *ellipses*.  The **ellipseMode** function is likewise similar to **rectMode**:
 
-	ellipseMode(CENTER);
 	ellipse(3,3,5,5);
+
+![Figure 1-10](/images/figures/EllipseCenterDiag.png)
 
 	ellipsMode(CORNER);
 	ellipse(3,3,4,4);
 
+![Figure 1-10](/images/figures/EllipseCornerDiag.png)
+
 	ellipseMode(CORNERS):
 	ellipse(5,5,8,7);
 
-![Figure 1-10](/images/figures/figure1-10.jpg)
+![Figure 1-10](/images/figures/EllipseCornersDiag.png)
 
 Circles have an implicit bounding box around them.
 

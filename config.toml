@@ -63,6 +63,11 @@ googleAnalytics = ""
     url     = "resources/"
     weight  = 30
 
+[[menu.main]]
+    name    = "Contact Us"
+    url     = "about_us/"
+    weight  = 99
+
 [blackfriday]
 	smartypants	= true
 	fractions = true
