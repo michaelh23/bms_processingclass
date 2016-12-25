@@ -49,7 +49,7 @@ Then the first pair of parameters are the upper left corner of the rectangle and
 
 ![Figure 1-9](/images/figures/RectCornerDiagram.png)
 
-The **ellipse** function is similar to **rect** except it draws *circles* and *ellipses*.  The **ellipseMode** function is likewise similar to **rectMode**:
+The **ellipse** function is similar to **rect** except it draws *circles* and *ellipses*.  Note that the default (x,y) point of an ellipse is it's center rather than the upper left corner as for rectangles.  The **ellipseMode** function is likewise similar to **rectMode**:
 
 	ellipse(3,3,5,5);
 
