@@ -281,24 +281,6 @@ Add an increment that would bring your character from the bottom of the screen u
 
 ## Activity 14
 
-Think about a grading system where numbers are turned into letters.  Fill in the blanks in the following code to complete the boolean expressions.
-
-	var grade = random(0,100);
-
-	if (__________) {
-		println("Assign letter grade A.");
-	} else if (__________) {
-		println(________________);
-	} else if(_____________) {
-		println(________________);
-	} else if(_____________) {
-		println(________________);
-	} else {
-		println(________________);
-	}
-
-## Activity 15
-
 	// 1. Given the following code:
 
 	var x = 2;
@@ -440,5 +422,22 @@ Think about a grading system where numbers are turned into letters.  Fill in the
 	    println("something went wrong");
 	}
 
+## Activity 15
+
+Think about a grading system where numbers are turned into letters.  Fill in the blanks in the following code to complete the boolean expressions.
+
+	var grade = random(0,100);
+
+	if (__________) {
+		println("Assign letter grade A.");
+	} else if (__________) {
+		println(________________);
+	} else if(_____________) {
+		println(________________);
+	} else if(_____________) {
+		println(________________);
+	} else {
+		println(________________);
+	}
 
 .

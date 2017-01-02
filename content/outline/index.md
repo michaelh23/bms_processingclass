@@ -25,7 +25,7 @@ The first two arguments "1,3" are the start point of the line and the last two a
 
 ![Figure 1-6](/images/figures/LineDiagram.png)
 
-The **rect** function draws a rectangle.  The upper left corner is *normally* specified by the x and y locations.  The next two parameters are the width and height of the rectangle.
+The **rect** function draws a rectangle.  The upper left corner of the rectangle is specified by the x and y locations.  The next two parameters are the width and height of the rectangle.
 
 	rect(2,3,5,4);
 
@@ -184,9 +184,9 @@ Remember:
 
 ### <a href="http://processingclass:8888/activities/#activity-7"><b>Complete Activity 7</b></a>
 
-## Special Variables
+## System Variables
 
-*Variables* will be covered in the next section.  In short, they let you store and retrieve information in the computer memory.  For now we will start with some special variables that the Processing language provides.
+*Variables* will be covered in the next section.  In short, they let you store and retrieve information in the computer memory.  For now we will start with some system variables that the Processing language provides.  These are not variables that you define, they are ones that Processing sets up and takes care of for you.
 
 ```mouseX``` and ```mouseY``` are variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
 
@@ -301,6 +301,8 @@ The random() function requires two arguments.  It returns a random number rangin
 
 ### <a href="http://processingclass:8888/activities/#activity-13"><b>Complete Activity 13</b></a>
 
+### <a href="http://processingclass:8888/activities/#activity-14"><b>Complete Activity 14</b></a>
+
 
 ## Booleans and if/else Statements
  
@@ -408,7 +410,7 @@ To continue our example above, we could write the following:
  
 ![Figure 5-4](/images/figures/Figure5-4.png)
 
-### <a href="http://processingclass:8888/activities/#activity-14"><b>Complete Activity 14</b></a>
+### <a href="http://processingclass:8888/activities/#activity-15"><b>Complete Activity 15</b></a>
 
 
 .
