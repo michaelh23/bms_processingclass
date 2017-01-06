@@ -5,6 +5,8 @@ title: Activities
 
 ## Activity 1
 
+Use Graph Paper.
+
 Take the graph paper provided and draw the shapes that would be drawn by this code:
 
 	1. line(220, 390, 240, 370);
@@ -20,12 +22,14 @@ Take the graph paper provided and draw the shapes that would be drawn by this co
 
 ## Activity 2
 
+Use Graph Paper.
+
 Take the graph paper provided and draw the shapes that would be drawn by this code:
 
 	point(350, 350);
 	ellipse(100, 100, 100, 100);
 	line(50, 250, 100, 50);
-	rect (200, 250, 100, 50);
+	rect(200, 250, 100, 50);
 	triangle(350, 50, 370, 150, 300, 100);
 	rect(200, 200, 50, 50);
 	line(200, 100, 300, 50);
@@ -40,13 +44,17 @@ Looking at the following image, write the code that would draw these shapes.  Hi
 
 ## Activity 3
 
-Try to guess what the instructions would be for the following picture:
+Use your Notebook.
+
+Write the code for the following output.  Assume you are using a 400 x 400 grid.  Include ```fill()``` and ```rect()```.
 
 ![Exercise 1-4](/images/activities/exercise1-4.png)
 
 ## Activity 4
 
-Complete the following program. Guess what RGB values to use.
+Use your Notebook.
+
+Complete the following program. Estimate what RGB values to use.
 
 ![Exercise 1-5](/images/activities/exercise1-5.png)
 
@@ -57,7 +65,9 @@ What color will each of the following lines of code generate?
 
 ## Activity 5
 
-Fix the errors in the following code statements:
+Use your Notebook.
+
+Rewrite the lines of code to make them correct:
 
 
 	// 1.
@@ -76,19 +86,17 @@ Fix the errors in the following code statements:
 	// _______________________________________________
 
 	// 4.
-	rectMode(center);
+	rect 100, 100, 30, 40;
 
 	// _______________________________________________
 
 	// 5.
-	function draw()
-
-	}           
+	tri(100,100, 40,50, 100,40);
 
 	// _______________________________________________
 
 	// 6.
-	createCanvas(windowWidth, Height);
+	triangle(70, 200, 130, 170, 110,)
 
 	// _______________________________________________
 
@@ -114,15 +122,24 @@ Fix the errors in the following code statements:
 
 ## Activity 6
 
-On graph paper, design/draw a creature of your own using the shapes you have learned so far.  **Only use up to six shapes and up to four lines**.  Color your creature including the outline colors.  **Name** your creature
+Use graph paper and your notebook.
+
+On graph paper, design/draw a creature of your own using the shapes you have learned so far.  Color your creature including the outline colors.  **Name** your creature.
+
+Your creature can use:
+
+- one rectangle
+- one ellipse
+- one triangle
+- up to two lines and/or points
  
 Once you have drawn a creature on your graph paper and colored it, take out a piece of lined paper and begin writing the code for your creature.
  
 - background() comes first
  
-- stroke(), fill(), etc. comes above the object or line you want to affect.
+- stroke(), fill(), etc. comes **above** the object or line you want to affect.
  
-- Drawing Functions:  point(), line(), rect(), rectMode(), ellipse(), triangle()
+- Drawing Functions:  point(), line(), rect(), ellipse(), triangle()
 
 - Color Functions:  stroke(), fill(), background(), noStroke(), noFill()
  
@@ -132,17 +149,30 @@ Look back to the <a href="/outline/#graphing-shapes">Class Outline</a> if you ne
  
 **Use COMMENTS for EVERY part of your drawing so you know what your code is doing and remember to include what color you intend.**
 
+Remember that to comment out a line you do this:
+
+	rect(50, 50, 25, 25); // the rest of this line is a comment
+	// this is a comment below the rect function
+
 ## Activity 7
+
+Create a new sketch.
 
 Go to your account on www.openprocessing.org, create a new sketch and type in the code for your creature and see if it will run.  :-)
 
 If it doesn't, try to determine what is wrong.
 
+Save your sketch as "MyCreature_(name)__" with "name" replaced with the name of your creature.
+
 ## Activity 8
+
+Create a new sketch.
 
 Create a new sketch and draw an ice cream cone using a triangle and an ellipse.  The color of the ice cream should be influenced by the ```mouseX``` and ```mouseY``` variables.  I.e. the color of the ice cream should change when you move the mouse.
 
 Make sure the ice cream is *inside* the cone (not on top of the cone).
+
+Save your sketch as "ice cream cone".
 
 ### Discussion questions: 
 
@@ -154,6 +184,8 @@ Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``
 
 
 ## Activity 9
+
+Create a new sketch.
 
 Change the following program so that instead of the circle moving from left to right as in the class outline, the circle grows in size.
 
@@ -175,7 +207,13 @@ Change the following program so that instead of the circle moving from left to r
 
 What would you change to have the circle follow the mouse as it grows?  How could you vary the speed at which the circle grows?	
 
+Answer these questions by using comments at the bottom and outside of your draw function.
+
+Save your sketch as "Activity9"
+
 ## Activity 10
+
+Create a new sketch.
 
 Create one shape (ellipse or rect) and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
 
@@ -187,7 +225,9 @@ Name your sketch:  AllVarChange
 
 ## Activity 11
 
-For each of the following examples, answer the questions:
+Use your Notebook.
+
+For each of the following examples, answer the questions.  It is recommended that you solve for each line of code first and then you will have the answers readily available to you.
 
 	// 1. Given the following code:
 
@@ -251,13 +291,17 @@ For each of the following examples, answer the questions:
 
 ## Activity 12
 
+Create a new sketch.
+
 Create a circle or square (w and h are the same) and declare a variable for ALL the parts and make the parts random(255) as was demonstrated to you.
 
 Name your sketch: RandomShapes
 
 ## Activity 13
 
-Open your character/creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  
+Create a new sketch.
+
+Open your creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  
 
 Save a Fork and name it RandomCreature.  
 
@@ -267,17 +311,17 @@ Do the following:
 
 - Set your framerate to 5 in `setup()`: `frameRate(5);`
 
-- Choose a part of your character/creature that you want to make change color randomly.
+- Choose a part of your creature that you want to make change color randomly.
 
-- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (ex:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.  Declare these variable just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable labels.
+- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (ex:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.  Declare these variables just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable labels.
 
-Does your character now have a body part that changes colors randomly?
+Does your creature now have a body part that changes colors randomly?
  
-If you would like your character to begin in the center of your screen, inside the setup function, set your x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
+If you would like your creature to begin in the center of your screen, inside the setup function, set your x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
  
-Then, let’s make your character begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]
+Then, let’s make your creature begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]  Answer this question as a comment at the bottom of your program.
 
-Add an increment that would bring your character from the bottom of the screen up on the y-axis.
+Add an increment that would bring your creature from the bottom of the screen up on the y-axis.
 
 ## Activity 14
 
@@ -424,7 +468,17 @@ Add an increment that would bring your character from the bottom of the screen u
 
 ## Activity 15
 
-Think about a grading system where numbers are turned into letters.  Fill in the blanks in the following code to complete the boolean expressions.
+Think about a grading system where numbers are turned into letters.
+
+Use this grading scale:
+
+- A - 90 to 100%
+- B - 80 to 89%
+- C - 70 to 79%
+- D - 60 to 69&
+- F - 59% or below
+
+Fill in the blanks in the following code to complete the boolean expressions.
 
 	var grade = random(0,100);
 

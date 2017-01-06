@@ -5,6 +5,12 @@ type: index
 weight: 0
 ---
 
+
+```
+    "Stop, Pause, and Think..."
+        -- Ms. Elwell
+```
+
 This is a class about coding.  By the end of it, you should be comfortable writing small to medium sized programs in a language called <a href="http://www.processing.org" target="_blank">Processing</a>.
 
 For this class, you will be entering and running your code on the <a href="https://www.openprocessing.org" target="_blank">Open Processing</a> website.

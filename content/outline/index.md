@@ -31,43 +31,12 @@ The **rect** function draws a rectangle.  The upper left corner of the rectangle
 
 ![Figure 1-7](/images/figures/RectDiagram.png)
 
-However, if you use the **rectMode** function, you can change how the rectangle is drawn.  If you use
-
-	rectMode(CENTER);
-	rect(3,3,5,5);
-
-then the x,y parameters of **rect** will be the center of the rectangle:
-
-![Figure 1-8](/images/figures/RectCentDiagram.png)
-
-And if you use a **rectMode** of *CORNERS* as in:
-
-	rectMode(CORNERS);
-	rect(5,5,8,7);
-
-Then the first pair of parameters are the upper left corner of the rectangle and the 2nd pair of parameters are the lower right corner of the rectangle.  (**Note**:  the default **rectMode** is **CORNER**).
-
-![Figure 1-9](/images/figures/RectCornerDiagram.png)
-
-The **ellipse** function is similar to **rect** except it draws *circles* and *ellipses*.  Note that the default (x,y) point of an ellipse is it's center rather than the upper left corner as for rectangles.  The **ellipseMode** function is likewise similar to **rectMode**:
+The **ellipse** function is similar to **rect** except it draws *circles* and *ellipses*.  Note that the default (x,y) point of an ellipse is it's center rather than the upper left corner as for rectangles.
 
 	ellipse(3,3,5,5);
 
 ![Figure 1-10](/images/figures/EllipseCenterDiag.png)
 
-	ellipsMode(CORNER);
-	ellipse(3,3,4,4);
-
-![Figure 1-10](/images/figures/EllipseCornerDiag.png)
-
-	ellipseMode(CORNERS):
-	ellipse(5,5,8,7);
-
-![Figure 1-10](/images/figures/EllipseCornersDiag.png)
-
-Circles have an implicit bounding box around them.
-
-![Figure 1-11](/images/figures/figure1-11.jpg)
 
 ### <a href="http://processingclass:8888/activities/#activity-1"><b>Complete Activity 1</b></a>
 
@@ -78,13 +47,23 @@ Circles have an implicit bounding box around them.
 
 ### Greyscale
 
-Describing color in terms of black, white, and grey in between.
+Greyscale means describing terms of black, white, and the grey inbetween.
 
-0 = black      255 = white     between 0 and 255 = greyscale
+- 0 = black
+- 255 = white
+- between 0 and 255 = greyscale
 
 ![Figure 1-13](/images/figures/figure1-13.jpg)
 
-Color Functions:  stroke(), fill(), background()
+You use these functions to change colors: `stroke(...)`, `fill(...)`, and `background(...)`
+
+You can use them like this:
+
+	stroke(50); // gives you a dark grey outline to your shapes
+	background(255); // gives you a white background
+	background(128); // gives you a medium grey background
+	fill(0); // fills the next shapes with black
+
 
 ### <a href="http://processingclass:8888/activities/#activity-3"><b>Complete Activity 3</b></a>
 
@@ -92,11 +71,26 @@ Color Functions:  stroke(), fill(), background()
 
 Computers view color in terms of Red, Green, and Blue light (RGB) and this can be confusing at first.  You are probably more used to color from mixing paint like knowing that mixing yellow and blue makes green.
 
-Mixing colors of light works differently as you can see below:
+Mixing colors of **light** works differently as you can see below:
 
 ![RGB image](/images/figures/AdditiveColor.svg)
 
-RGB color can be understood as all colors that can be made up of shining a Red, Green, and Blue light on a wall and adjusting the lights with dimmer switches.  If only red is on, the wall looks red.  If red and green are on, the wall will look yellow (see above).  Dimming the lights will change the intensity of the light.  For example the following code:
+RGB color can be understood as all colors that can be made up of shining a Red, Green, and Blue light on a wall and adjusting the lights with dimmer switches.  If only red is on, the wall looks red.  If red and green are on, the wall will look yellow (see above).  Dimming the lights will change the intensity of the light.
+
+Adding RGB to what we did above wtih greyscale:
+
+	stroke(255,0,0); // gives a red outline to your shapes
+	background(0,255, 0);  // gives you a green background
+	fill(0, 0, 255); // fills the next shapes with blue
+
+And rewriting the above with greyscale using RGB:
+
+	stroke(50, 50, 50); // gives you a dark grey outline to your shapes
+	background(255, 255, 255); // gives you a white background
+	background(128, 128, 128); // gives you a medium grey background
+	fill(0, 0, 0); // fills the next shapes with black
+
+The following code:
 
 	function setup() {
 	  createCanvas(windowWidth, windowHeight); 
@@ -109,10 +103,10 @@ RGB color can be understood as all colors that can be made up of shining a Red, 
 	  fill(148, 222, 254);
 	  rect(300,300,50,50);
 
-	  fill(148*.8, 222*.8, 254*.8);
+	  fill(148 * 0.8, 222 * 0.8, 254 * 0.8);
 	  rect(300,360,50,50);
 
-	  fill(148*.6, 222*.6, 254*.6);
+	  fill(148 * 0.6, 222 * 0.6, 254 * 0.6);
 	  rect(300,420,50,50);
 	}
 
@@ -139,9 +133,9 @@ So far, we've been doing **function calls**.
 
 ### <a href="http://processingclass:8888/activities/#activity-5"><b>Complete Activity 5</b></a>
 
-## Create Creature/Character
+## Create Creature
 
-For this part, you are going to design/draw a creature of your own using the shapes you have learned so far.  I want you to keep your design fairly simple since the point here is to learn how to turn your design into code you can run and see on the screen.
+For this part, you are going to design/draw a creature of your own using the shapes you have learned so far.  I want you to keep your design simple since the point here is to learn how to turn your design into code you can run and see on the screen.
 
 ### <a href="http://processingclass:8888/activities/#activity-6"><b>Complete Activity 6</b></a>
 
