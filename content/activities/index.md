@@ -37,7 +37,7 @@ Take the graph paper provided and draw the shapes that would be drawn by this co
 	triangle(70, 200, 130, 170, 110, 230);
 	point(50, 350);
 
-Looking at the following image, write the code that would draw these shapes.  Hint, small black squares are points.
+Looking at the following image, write the code that would draw these ten shapes in their numbered order.  The first two answers should be the points at 1 and 2.  You do not need to write the code that would draw the red numbers themselves.
 
 ![Activity 2b](/images/activities/assignment2_graph.svg)
 
@@ -156,17 +156,43 @@ Remember that to comment out a line you do this:
 
 ## Activity 7
 
-Create a new sketch.
+Create a new Open Processing sketch.
 
 Go to your account on www.openprocessing.org, create a new sketch and type in the code for your creature and see if it will run.  :-)
 
-If it doesn't, try to determine what is wrong.
+Make sure you put your code inside the draw function (look for `function draw()` and write between the curly braces).
+
+If it doesn't run, try to determine what is wrong.  Don't forget to look at the "Console" to check for errors reported there.
 
 Save your sketch as "MyCreature_(name)__" with "name" replaced with the name of your creature.
 
 ## Activity 8
 
-Create a new sketch.
+Open your creature sketch from Activity 7.  Add two variables `x` and `y` at the top of your draw function and set them to be equal to a somewhat central part of your creature.
+ 
+For example:
+
+	function draw() {
+		var x = 200;
+		var y = 150;
+
+		... # more code below here
+ 
+Save the sketch from Activity 7 as a FORK and add “XY” to the end of the name.
+ 
+Incorporate these x and y variable into your sketch for all the x and y arguments that you have used in your code.
+ 
+You may use the calculator on your computer to assist you.  To find it, (on Windows computers) click on the Windows icon in the lower left corner.  There should be a calculator option.
+ 
+After you have incorporated x and y variables into all your x and y arguments in your code, your creature should look the same (as if nothing has changed because it shouldn’t have).  If it is not the same, what did you do wrong?
+ 
+Once it looks the way it should, go up to where you have your variables declared and change the value for var x to be equal to mouseX and the value for var y to be equal to mouseY.
+ 
+Now run your program.  Does your creature follow your mouse around on screen as you move it?  If not, what went wrong?  Fix your code so that it does.
+
+## Activity 9
+
+Create a new Open Processing sketch.
 
 Create a new sketch and draw an ice cream cone using a triangle and an ellipse.  The color of the ice cream should be influenced by the ```mouseX``` and ```mouseY``` variables.  I.e. the color of the ice cream should change when you move the mouse.
 
@@ -182,10 +208,9 @@ When you move the mouse, are there areas of the screen where the mouse doesn't c
 
 Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
 
+## Activity 10
 
-## Activity 9
-
-Create a new sketch.
+Create a new Open Processing sketch.
 
 Change the following program so that instead of the circle moving from left to right as in the class outline, the circle grows in size.
 
@@ -209,11 +234,11 @@ What would you change to have the circle follow the mouse as it grows?  How coul
 
 Answer these questions by using comments at the bottom and outside of your draw function.
 
-Save your sketch as "Activity9"
+Name your sketch:  MoveGrow
 
-## Activity 10
+## Activity 11
 
-Create a new sketch.
+Create a new Open Processing sketch.
 
 Create one shape (ellipse or rect) and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
 
@@ -223,7 +248,7 @@ Once that works, try changing the color so that it's not just greyscale.
 
 Name your sketch:  AllVarChange
 
-## Activity 11
+## Activity 12
 
 Use your Notebook.
 
@@ -289,41 +314,8 @@ For each of the following examples, answer the questions.  It is recommended tha
 
 	// 3d. what is the final value of b:__________________
 
-## Activity 12
-
-Create a new sketch.
-
-Create a circle or square (w and h are the same) and declare a variable for ALL the parts and make the parts random(255) as was demonstrated to you.
-
-Name your sketch: RandomShapes
 
 ## Activity 13
-
-Create a new sketch.
-
-Open your creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  
-
-Save a Fork and name it RandomCreature.  
-
-Do the following:
- 
-- Take out mouseX and mouseY and put in the original value for the var.
-
-- Set your framerate to 5 in `setup()`: `frameRate(5);`
-
-- Choose a part of your creature that you want to make change color randomly.
-
-- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (ex:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.  Declare these variables just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable labels.
-
-Does your creature now have a body part that changes colors randomly?
- 
-If you would like your creature to begin in the center of your screen, inside the setup function, set your x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
- 
-Then, let’s make your creature begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]  Answer this question as a comment at the bottom of your program.
-
-Add an increment that would bring your creature from the bottom of the screen up on the y-axis.
-
-## Activity 14
 
 	// 1. Given the following code:
 
@@ -466,7 +458,45 @@ Add an increment that would bring your creature from the bottom of the screen up
 	    println("something went wrong");
 	}
 
+
+
+
+## Activity 14
+
+Create a new Open Processing sketch.
+
+Create a circle or square (w and h are the same) and declare a variable for ALL the parts and make the parts random(255) as was demonstrated to you.
+
+Name your sketch: RandomShapes
+
 ## Activity 15
+
+Create a new Open Processing sketch.
+
+Open your creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  
+
+Save a Fork and name it RandomCreature.  
+
+Do the following:
+ 
+- Take out mouseX and mouseY and put in the original value for the var.
+
+- Set your framerate to 5 in `setup()`: `frameRate(5);`
+
+- Choose a part of your creature that you want to make change color randomly.
+
+- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (ex:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.  Declare these variables just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable labels.
+
+Does your creature now have a body part that changes colors randomly?
+ 
+If you would like your creature to begin in the center of your screen, inside the setup function, set your x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
+ 
+Then, let’s make your creature begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]  Answer this question as a comment at the bottom of your program.
+
+Add an increment that would bring your creature from the bottom of the screen up on the y-axis.
+
+
+## Activity 16
 
 Think about a grading system where numbers are turned into letters.
 

@@ -21,6 +21,10 @@ The official site is here:  <a href="http://python.org" target="_blank">Python.o
 
 <a href="https://www.codecademy.com/learn/python">CodeAcademy.org</a> has an online course to help learn Python.  There are many other resources online as well as many books.
 
+## Defold
+
+Defold is a free commercial quality game engine for 2d games.  You can find it here:  <a http://http://defold.com" target="_blank">Defold</a>.  It is completely free to use and can generate games for Windows, Mac, iOS, Android, and Web.
+
 ## Phaser.io
 
 Phaser is a free framework for writing games for websites.  Its host website <a href="http://phaser.io" target="_blank">phaser.io</a> has a nice page with lots of examples.  This has been used for commercial and free game work and is quite powerful.  There are a number of tutorials for how to learn it on websites as well as youtube videos.  It is worth checking out if you are interested in making games.
@@ -29,7 +33,7 @@ Phaser is a free framework for writing games for websites.  Its host website <a 
 
 <a href="http://inform7.com/" target="_blank">Inform</a> is a language for writing text adventures, otherwise known as Interactive Fiction.  Such games present the world to you in words and language.  The player types commands and the world changes.  Very old school yet some pretty powerful works of fiction have been created.
 
-Inform comes with a complete environment for creating these adventures for Windows, Mac and other environments.  The programming language Inform is designed to read like plain english.  For example, this is a sample from the documentation.  This describes a room and some objects in a sample game.  This is actually code that can be run in the Inform language:
+Inform comes with a complete environment for creating these adventures for Windows, Mac and other environments.  The programming language Inform is designed to read like plain English.  For example, this is a sample from the documentation.  This describes a room and some objects in a sample game.  This is actually code that can be run in the Inform language:
 
     "Cave Entrance"
 

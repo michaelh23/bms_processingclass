@@ -38,9 +38,9 @@ The **ellipse** function is similar to **rect** except it draws *circles* and *e
 ![Figure 1-10](/images/figures/EllipseCenterDiag.png)
 
 
-### <a href="http://processingclass:8888/activities/#activity-1"><b>Complete Activity 1</b></a>
+### <a href="/activities/#activity-1"><b>Complete Activity 1</b></a>
 
-### <a href="http://processingclass:8888/activities/#activity-2"><b>Complete Activity 2</b></a>
+### <a href="/activities/#activity-2"><b>Complete Activity 2</b></a>
 
 
 ## Color
@@ -65,7 +65,7 @@ You can use them like this:
 	fill(0); // fills the next shapes with black
 
 
-### <a href="http://processingclass:8888/activities/#activity-3"><b>Complete Activity 3</b></a>
+### <a href="/activities/#activity-3"><b>Complete Activity 3</b></a>
 
 ### RGB
 
@@ -117,7 +117,7 @@ will produce this:
 You should be able to see how to experiment from here to produce other colors.  There are also charts of RGB colors and their common names on the web that you can find if you search for them.
 
 
-### <a href="http://processingclass:8888/activities/#activity-4"><b>Complete Activity 4</b></a>
+### <a href="/activities/#activity-4"><b>Complete Activity 4</b></a>
 
 ## Parts of Code
 
@@ -131,13 +131,13 @@ So far, we've been doing **function calls**.
 - the arguments to the functions are surrounded by parenthesis
 - each statement ends with a semicolon ';' character
 
-### <a href="http://processingclass:8888/activities/#activity-5"><b>Complete Activity 5</b></a>
+### <a href="/activities/#activity-5"><b>Complete Activity 5</b></a>
 
 ## Create Creature
 
 For this part, you are going to design/draw a creature of your own using the shapes you have learned so far.  I want you to keep your design simple since the point here is to learn how to turn your design into code you can run and see on the screen.
 
-### <a href="http://processingclass:8888/activities/#activity-6"><b>Complete Activity 6</b></a>
+### <a href="/activities/#activity-6"><b>Complete Activity 6</b></a>
 
 ## OpenProcessing.org Sketches
 
@@ -176,29 +176,7 @@ Remember:
 
 - Processing is CASE SENSITIVE and does NOT do spellcheck for you.
 
-### <a href="http://processingclass:8888/activities/#activity-7"><b>Complete Activity 7</b></a>
-
-## System Variables
-
-*Variables* will be covered in the next section.  In short, they let you store and retrieve information in the computer memory.  For now we will start with some system variables that the Processing language provides.  These are not variables that you define, they are ones that Processing sets up and takes care of for you.
-
-```mouseX``` and ```mouseY``` are variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
-
-	function setup() {
-	  createCanvas(windowWidth, windowHeight); 
-	  
-	} 
-
-	function draw() {
-	  background(100);  // moved down from setup() so we don't get trails
-	  ellipse(mouseX, mouseY, 20, 20);
-	}
-
-When you run this sketch, you will see a circle following the mouse.  Why? because the position of the ellipse is set using ```mouseX``` and ```mouseY```.  Every time we go through the ```draw()``` function and call ellipse, the variables ```mouseX``` and ```mouseY``` have the current mouse position.
-
-To explore another way to use these system variables, to the next activity.
-
-### <a href="http://processingclass:8888/activities/#activity-8"><b>Complete Activity 8</b></a>
+### <a href="/activities/#activity-7"><b>Complete Activity 7</b></a>
 
 ## Variables
 
@@ -219,18 +197,29 @@ In that example, we assign the number 23 to the variable called ``x``.  In the f
 
 	rect(23, 25, 50, 50);
 
-Here are some more examples.  Make sure you understand why each variable has the stated value.  Ask if you don't:
+### <a href="/activities/#activity-8"><b>Complete Activity 8</b></a>
 
-	var x, y, a, b;
+### System Variables
 
-	x = 5;
-	a = 10;
-	b = 20;
-	y = a + b; // y equals 30
-	x = y - 10 * 20; // before, x equaled 5, now x equals 400
-	x = x * 5; // now x = 2000
+*System Variables* let you store and retrieve information in the computer memory.  For now we will start with some system variables that the Processing language provides.  These are not variables that you define, they are ones that Processing sets up and takes care of for you.
 
-So great, we can do math now and store the results to use later.
+```mouseX``` and ```mouseY``` are variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
+
+	function setup() {
+	  createCanvas(windowWidth, windowHeight); 
+	  
+	} 
+
+	function draw() {
+	  background(100);  // moved down from setup() so we don't get trails
+	  ellipse(mouseX, mouseY, 20, 20);
+	}
+
+When you run this sketch, you will see a circle following the mouse.  Why? because the position of the ellipse is set using ```mouseX``` and ```mouseY```.  Every time we go through the ```draw()``` function and call ellipse, the variables ```mouseX``` and ```mouseY``` have the current mouse position.
+
+You will explor another way to use system variables in the next activity:
+
+### <a href="/activities/#activity-9"><b>Complete Activity 9</b></a>
 
 What do you think this next program does?
 
@@ -254,9 +243,9 @@ A circle of diameter 50 will first be drawn at position (100,100).  Then it will
 
 Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the new value will be stored until the next time it is used.
 
-### <a href="http://processingclass:8888/activities/#activity-9"><b>Complete Activity 9</b></a>
+### <a href="/activities/#activity-10"><b>Complete Activity 10</b></a>
 
-### <a href="http://processingclass:8888/activities/#activity-10"><b>Complete Activity 10</b></a>
+### <a href="/activities/#activity-11"><b>Complete Activity 11</b></a>
 
 ## Operator Precedence
 
@@ -270,9 +259,23 @@ because multipication is always done before addition.  *Processing* is the same 
 
 	(2 + 3) * 4 = 20 (parenthesis first)
 
-This next activity touches slightly on operator precedence though is mostly about following the value of variables:
+Here are some examples.  Make sure you understand why each variable has the stated value.  Ask if you don't:
 
-### <a href="http://processingclass:8888/activities/#activity-11"><b>Complete Activity 11</b></a>
+	var x, y, a, b;
+
+	x = 5;
+	a = 10;
+	b = 20;
+	y = a + b; // y equals 30
+	x = y - 10 * 20; // before, x equaled 5, now x equals 400
+	x = x * 5; // now x = 2000
+
+The next two activities will touch on operator precedence though they are mostly about following the value of variables:
+
+### <a href="/activities/#activity-12"><b>Complete Activity 12</b></a>
+
+### <a href="/activities/#activity-13"><b>Complete Activity 13</b></a>
+
 
 ## Random
 
@@ -291,11 +294,9 @@ In code, this would look like:
  
 The random() function requires two arguments.  It returns a random number ranging from the first argument to the second argument.  The second argument must be larger than the first argument for it to work properly.  The function random() also works with one argument by assuming a range between ZERO and that argument, such as `random(6)` which will return a random number between 0 and 6.
 
-### <a href="http://processingclass:8888/activities/#activity-12"><b>Complete Activity 12</b></a>
+### <a href="/activities/#activity-14"><b>Complete Activity 14</b></a>
 
-### <a href="http://processingclass:8888/activities/#activity-13"><b>Complete Activity 13</b></a>
-
-### <a href="http://processingclass:8888/activities/#activity-14"><b>Complete Activity 14</b></a>
+### <a href="/activities/#activity-15"><b>Complete Activity 15</b></a>
 
 
 ## Booleans and if/else Statements
@@ -404,7 +405,7 @@ To continue our example above, we could write the following:
  
 ![Figure 5-4](/images/figures/Figure5-4.png)
 
-### <a href="http://processingclass:8888/activities/#activity-15"><b>Complete Activity 15</b></a>
+### <a href="/activities/#activity-16"><b>Complete Activity 16</b></a>
 
 
 .
