@@ -233,7 +233,7 @@ In that example, we assign the number 23 to the variable called ``x``.  In the f
 
 When you run this sketch, you will see a circle following the mouse.  Why? because the position of the ellipse is set using ```mouseX``` and ```mouseY```.  Every time we go through the ```draw()``` function and call ellipse, the variables ```mouseX``` and ```mouseY``` have the current mouse position.
 
-You will explor another way to use system variables in the next activity:
+You will explore another way to use system variables in the next activity:
 
 ### <a href="/activities/#activity-9"><b>Complete Activity 9</b></a>
 
