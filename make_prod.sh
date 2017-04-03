@@ -1,4 +1,4 @@
 #!/bin/sh
 
 ../hugo --theme=hugo-material-docs
-s3cmd -r -P put public/* s3://processingclass.michaelhelmke.org
+s3cmd -P sync public/* s3://processingclass.michaelhelmke.org

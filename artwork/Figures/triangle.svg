@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="216" height="180" viewBox="0, 0, 432, 360">
+  <g id="Background">
+    <path d="M0,-0 L432,-0 L432,360 L0,360 L0,-0 z" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_2">
+    <g>
+      <path d="M133.656,87.5 L150.656,87.5 L150.656,103.5 L133.656,103.5 L133.656,87.5 z" fill="#000000"/>
+      <path d="M133.656,87.5 L150.656,87.5 L150.656,103.5 L133.656,103.5 L133.656,87.5 z" fill-opacity="0" stroke="#000000" stroke-width="4"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 181.482, 91.5)">
+      <tspan x="-20.685" y="4.5" font-family="ArialMT" font-size="18" fill="#000000">(x1,y1)</tspan>
+    </text>
+    <path d="M142,96.5 L87.5,257.5" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <g>
+      <path d="M307.5,188.5 L324.5,188.5 L324.5,204.5 L307.5,204.5 L307.5,188.5 z" fill="#000000"/>
+      <path d="M307.5,188.5 L324.5,188.5 L324.5,204.5 L307.5,204.5 L307.5,188.5 z" fill-opacity="0" stroke="#000000" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M79,249.5 L96,249.5 L96,265.5 L79,265.5 L79,249.5 z" fill="#000000"/>
+      <path d="M79,249.5 L96,249.5 L96,265.5 L79,265.5 L79,249.5 z" fill-opacity="0" stroke="#000000" stroke-width="4"/>
+    </g>
+    <path d="M142,96.5 L317,196.5" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <path d="M317,196.5 L87.5,257.5" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 319.174, 170.5)">
+      <tspan x="-20.685" y="4.5" font-family="ArialMT" font-size="18" fill="#000000">(x3,y3)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 121.326, 268.5)">
+      <tspan x="-20.685" y="4.5" font-family="ArialMT" font-size="18" fill="#000000">(x2,y2)</tspan>
+    </text>
+  </g>
+</svg>

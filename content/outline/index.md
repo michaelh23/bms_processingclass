@@ -11,13 +11,13 @@ Note that in Processing, we set the grid origin (0,0) point in the upper left co
 
 ### Drawing Functions:  point(), line(), rect(), ellipse()
 
-The **point** function draws a point at the given x and y location on the screen.  Coordinates are *always* given in (x,y) order:
+The `point` function draws a point at the given x and y location on the screen.  Coordinates are *always* given in (x,y) order:
 
 	point(4,5);
 
 ![Figure 1-5](/images/figures/PointDiagram.png)
 
-The **line** function draws a line between two x and y locations on the screen:
+The `line` function draws a line between two x and y locations on the screen:
 
 	line(1,3,8,3);
 
@@ -25,13 +25,29 @@ The first two arguments "1,3" are the start point of the line and the last two a
 
 ![Figure 1-6](/images/figures/LineDiagram.png)
 
-The **rect** function draws a rectangle.  The upper left corner of the rectangle is specified by the x and y locations.  The next two parameters are the width and height of the rectangle.
+The `triangle` function draws a triangle.  The function takes 6 parameters describing 3 points:  (x1,y1), (x2,y2), and (x3,y3).
+
+![Triangle](/images/figures/triangle.svg)
+
+You call the triangle function like this:
+
+	triangle(200,100,  300,300,  100,300);
+
+The `rect` function draws a rectangle.  The upper left corner of the rectangle is specified by the x and y parameters and then the width and height.
+
+![Rectangle Arrows](/images/figures/rect_arrows.svg)
+
+Calling the `rect` function looks like this with 2,3 as the x and y position of the rectangle with a width of 5 and a height of 4:
 
 	rect(2,3,5,4);
 
 ![Figure 1-7](/images/figures/RectDiagram.png)
 
-The **ellipse** function is similar to **rect** except it draws *circles* and *ellipses*.  Note that the default (x,y) point of an ellipse is it's center rather than the upper left corner as for rectangles.
+The `ellipse` function is similar to `rect` except it draws *circles* and *ellipses*.  This time, the center of the ellipse is specified by the x and y parameters and then the width and height.
+
+![Ellipse Arrows](/images/figures/ellipse_arrows.svg)
+
+Calling the `ellipse` function looks like this example with 3,3 as the x and y position of the ellipse with a width of 5 and height of 5:
 
 	ellipse(3,3,5,5);
 
@@ -201,9 +217,9 @@ In that example, we assign the number 23 to the variable called ``x``.  In the f
 
 ### System Variables
 
-*System Variables* let you store and retrieve information in the computer memory.  For now we will start with some system variables that the Processing language provides.  These are not variables that you define, they are ones that Processing sets up and takes care of for you.
+*System Variables* are provided by the Processing language for you to use.  They give you access to information like the mouse position on the screen or the last key pressed on the keyboard.  *System Variables* are not variables that you define, they are set by Processing and you can read them from your sketch.
 
-```mouseX``` and ```mouseY``` are variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
+```mouseX``` and ```mouseY``` are system variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
 
 	function setup() {
 	  createCanvas(windowWidth, windowHeight); 
@@ -251,11 +267,11 @@ Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the
 
 When you add or subtract or multiply, the +, -, *, and / (for divide) symbols are called *operators*.
 
-You may know from math that some operators are always done before others.  For example:
+You may know from math that some operators are always done before others (for example, the PEMDAS mnemonic).  For example:
 
 	2 + 3 * 4 = 14 (not 20)
 
-because multipication is always done before addition.  *Processing* is the same way.  Multiplication and division are always done first and then addition and subtraction.  You can use parenthesis to change the order.  Operations in parenthesis are always done first.  For example:
+because multipication is always done before addition.  *Processing* is the same way.  Multiplication and division are always done before addition and subtraction.  You can use parenthesis to change the order.  Operations in parenthesis are always done first.  For example:
 
 	(2 + 3) * 4 = 20 (parenthesis first)
 
@@ -267,10 +283,10 @@ Here are some examples.  Make sure you understand why each variable has the stat
 	a = 10;
 	b = 20;
 	y = a + b; // y equals 30
-	x = y - 10 * 20; // before, x equaled 5, now x equals 400
+	x = (y - 10) * 20; // before, x equaled 5, now x equals 400
 	x = x * 5; // now x = 2000
 
-The next two activities will touch on operator precedence though they are mostly about following the value of variables:
+The next two activities will touch on operator precedence though they are mostly about following the value of variables.  Remember the computer will execute one line at a time.  If variable values are changed, the computer will use the most recent value of the variable.
 
 ### <a href="/activities/#activity-12"><b>Complete Activity 12</b></a>
 

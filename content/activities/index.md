@@ -46,7 +46,7 @@ Looking at the following image, write the code that would draw these ten shapes 
 
 Use your Notebook.
 
-Write the code for the following output.  Assume you are using a 400 x 400 grid.  Include ```fill()``` and ```rect()```.
+Using the ```fill()``` and ```rect()``` functions, code the following shape.  Hint, it can be done with 4 rectangles and 3 fill calls however it can also be solved with only 3 rectangles.
 
 ![Exercise 1-4](/images/activities/exercise1-4.png)
 
@@ -54,13 +54,29 @@ Write the code for the following output.  Assume you are using a 400 x 400 grid.
 
 Use your Notebook.
 
-Complete the following program. Estimate what RGB values to use.
+Estimate which RGB values to use for the following 3 colors:
 
-![Exercise 1-5](/images/activities/exercise1-5.png)
+	Bright Blue:  R__________, G_________, B_________
+
+	Dark Purple:  R__________, G_________, B_________
+
+	Yellow:		  R__________, G_________, B_________
 
 What color will each of the following lines of code generate?
 
-![Exercise 1-6](/images/activities/exercise1-6.png)
+	fill(0, 100, 0);		_____________________________
+
+	fill(100);				_____________________________
+
+	stroke(0,0,200);		_____________________________
+
+	stroke(255);			_____________________________
+
+	stroke(255,255,0);		_____________________________
+
+	stroke(0, 255, 255);	_____________________________
+
+	stroke(200, 50, 50);	_____________________________
 
 
 ## Activity 5
@@ -158,7 +174,7 @@ Remember that to comment out a line you do this:
 
 Create a new Open Processing sketch.
 
-Go to your account on www.openprocessing.org, create a new sketch and type in the code for your creature and see if it will run.  :-)
+Go to your account on www.openprocessing.org, create a new sketch and type in the code for your creature and see if it will run.
 
 Make sure you put your code inside the draw function (look for `function draw()` and write between the curly braces).
 
@@ -178,7 +194,7 @@ For example:
 
 		... # more code below here
  
-Save the sketch from Activity 7 as a FORK and add “XY” to the end of the name.
+Save the sketch from Activity 7 as a FORK and add “var” to the end of the name (as in "MyCreature_(name)__var").
  
 Incorporate these x and y variable into your sketch for all the x and y arguments that you have used in your code.
  
@@ -186,10 +202,6 @@ You may use the calculator on your computer to assist you.  To find it, (on Wind
  
 After you have incorporated x and y variables into all your x and y arguments in your code, your creature should look the same (as if nothing has changed because it shouldn’t have).  If it is not the same, what did you do wrong?
  
-Once it looks the way it should, go up to where you have your variables declared and change the value for var x to be equal to mouseX and the value for var y to be equal to mouseY.
- 
-Now run your program.  Does your creature follow your mouse around on screen as you move it?  If not, what went wrong?  Fix your code so that it does.
-
 ## Activity 9
 
 Create a new Open Processing sketch.
@@ -207,6 +219,18 @@ When you move the mouse, are there areas of the screen where the mouse doesn't c
 - (Advanced/Not Required:  Check out the <a href="http://p5js.org/reference/#/p5/map">"map()"</a> function at p5js.org for a way around this...)
 
 Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
+
+## Activity 9B
+
+Now go back to the sketch of your creature that you modified in Activity 8.  Go to where you have your variables defined.  You set your variable ```x``` and your variable ```y``` to be equal to numbers.  Replace the numbers with the system variables ```mouseX``` and ```mouxeY``` as shown:
+
+	function draw() {
+		var x = mouseX;
+		var y = mouseY;
+
+		... # more code for your creature below here
+
+FORK this sketch and save it as "MyCreature_(name)__mXmY”
 
 ## Activity 10
 
@@ -230,9 +254,7 @@ Change the following program so that instead of the circle moving from left to r
 		// fill in your code here
 	}
 
-What would you change to have the circle follow the mouse as it grows?  How could you vary the speed at which the circle grows?	
-
-Answer these questions by using comments at the bottom and outside of your draw function.
+Once that works, change your program so that the circle moves with the mouse and changes size with the mouse at the same time.	
 
 Name your sketch:  MoveGrow
 
@@ -242,9 +264,7 @@ Create a new Open Processing sketch.
 
 Create one shape (ellipse or rect) and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
 
-Make it so that at least the following items change:  color, x, and y
-
-Once that works, try changing the color so that it's not just greyscale.
+Next, make your background color change based on the position of the mouse and make your shape move two times faster across the X axis as it does on the Y axis.
 
 Name your sketch:  AllVarChange
 
@@ -442,23 +462,6 @@ For each of the following examples, answer the questions.  It is recommended tha
 	// 7b. What is the value of q at (b):
 	// 7c. What is the value of p at (c):
 	// 7d. What is the value of q at (d):
-
-	// 8. Make a new sketch at openprocessing.org and
-	// write a program to swap two numbers.  Here is a
-	// starting point:
-
-	var x = 10;
-	var y = 20;
-
-	// your code here:
-
-	if(x == 20 && y == 10) {
-	    println("x and y were swapped");
-	} else {
-	    println("something went wrong");
-	}
-
-
 
 
 ## Activity 14
