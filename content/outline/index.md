@@ -237,6 +237,8 @@ You will explore another way to use system variables in the next activity:
 
 ### <a href="/activities/#activity-9"><b>Complete Activity 9</b></a>
 
+### <a href="/activities/#activity-9b"><b>Complete Activity 9B</b></a>
+
 What do you think this next program does?
 
 	var circleX = 100;

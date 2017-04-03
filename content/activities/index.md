@@ -20,6 +20,8 @@ Take the graph paper provided and draw the shapes that would be drawn by this co
 	9. ellipse(50, 50, 60, 60);
 	10. line(320, 20, 380, 80);
 
+<a href="/outline/#a-href-activities-activity-1-b-complete-activity-1-b-a">**STOP** Go back to the Outline</a>
+
 ## Activity 2
 
 Use Graph Paper.
@@ -41,6 +43,7 @@ Looking at the following image, write the code that would draw these ten shapes 
 
 ![Activity 2b](/images/activities/assignment2_graph.svg)
 
+<a href="/outline/#a-href-activities-activity-2-b-complete-activity-2-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 3
 
@@ -49,6 +52,8 @@ Use your Notebook.
 Using the ```fill()``` and ```rect()``` functions, code the following shape.  Hint, it can be done with 4 rectangles and 3 fill calls however it can also be solved with only 3 rectangles.
 
 ![Exercise 1-4](/images/activities/exercise1-4.png)
+
+<a href="/outline/#a-href-activities-activity-3-b-complete-activity-3-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 4
 
@@ -78,6 +83,7 @@ What color will each of the following lines of code generate?
 
 	stroke(200, 50, 50);	_____________________________
 
+<a href="/outline/#a-href-activities-activity-4-b-complete-activity-4-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 5
 
@@ -136,6 +142,8 @@ Rewrite the lines of code to make them correct:
 
 	// _______________________________________________
 
+<a href="/outline/#a-href-activities-activity-5-b-complete-activity-5-b-a">**STOP** Go back to the Outline</a>
+
 ## Activity 6
 
 Use graph paper and your notebook.
@@ -170,6 +178,9 @@ Remember that to comment out a line you do this:
 	rect(50, 50, 25, 25); // the rest of this line is a comment
 	// this is a comment below the rect function
 
+<a href="/outline/#a-href-activities-activity-6-b-complete-activity-6-b-a">**STOP** Go back to the Outline</a>
+
+
 ## Activity 7
 
 Create a new Open Processing sketch.
@@ -181,6 +192,8 @@ Make sure you put your code inside the draw function (look for `function draw()`
 If it doesn't run, try to determine what is wrong.  Don't forget to look at the "Console" to check for errors reported there.
 
 Save your sketch as "MyCreature_(name)__" with "name" replaced with the name of your creature.
+
+<a href="/outline/#a-href-activities-activity-7-b-complete-activity-7-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 8
 
@@ -201,6 +214,8 @@ Incorporate these x and y variable into your sketch for all the x and y argument
 You may use the calculator on your computer to assist you.  To find it, (on Windows computers) click on the Windows icon in the lower left corner.  There should be a calculator option.
  
 After you have incorporated x and y variables into all your x and y arguments in your code, your creature should look the same (as if nothing has changed because it shouldn’t have).  If it is not the same, what did you do wrong?
+
+<a href="/outline/#a-href-activities-activity-8-b-complete-activity-8-b-a">**STOP** Go back to the Outline</a>
  
 ## Activity 9
 
@@ -220,6 +235,9 @@ When you move the mouse, are there areas of the screen where the mouse doesn't c
 
 Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
 
+<a href="/outline/#a-href-activities-activity-9-b-complete-activity-9-b-a">**STOP** Go back to the Outline</a>
+
+
 ## Activity 9B
 
 Now go back to the sketch of your creature that you modified in Activity 8.  Go to where you have your variables defined.  You set your variable ```x``` and your variable ```y``` to be equal to numbers.  Replace the numbers with the system variables ```mouseX``` and ```mouxeY``` as shown:
@@ -231,6 +249,8 @@ Now go back to the sketch of your creature that you modified in Activity 8.  Go 
 		... # more code for your creature below here
 
 FORK this sketch and save it as "MyCreature_(name)__mXmY”
+
+<a href="/outline/#a-href-activities-activity-9-b-complete-activity-9-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 10
 
@@ -258,6 +278,8 @@ Once that works, change your program so that the circle moves with the mouse and
 
 Name your sketch:  MoveGrow
 
+<a href="/outline/#a-href-activities-activity-10-b-complete-activity-10-b-a">**STOP** Go back to the Outline</a>
+
 ## Activity 11
 
 Create a new Open Processing sketch.
@@ -267,6 +289,8 @@ Create one shape (ellipse or rect) and declare variables for all the arguments n
 Next, make your background color change based on the position of the mouse and make your shape move two times faster across the X axis as it does on the Y axis.
 
 Name your sketch:  AllVarChange
+
+<a href="/outline/#a-href-activities-activity-11-b-complete-activity-11-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 12
 
@@ -333,6 +357,8 @@ For each of the following examples, answer the questions.  It is recommended tha
 	// 3c. what is the final value of z:__________________
 
 	// 3d. what is the final value of b:__________________
+
+<a href="/outline/#a-href-activities-activity-12-b-complete-activity-12-b-a">**STOP** Go back to the Outline</a>
 
 
 ## Activity 13
@@ -463,6 +489,8 @@ For each of the following examples, answer the questions.  It is recommended tha
 	// 7c. What is the value of p at (c):
 	// 7d. What is the value of q at (d):
 
+<a href="/outline/#a-href-activities-activity-13-b-complete-activity-13-b-a">**STOP** Go back to the Outline</a>
+
 
 ## Activity 14
 
@@ -471,6 +499,9 @@ Create a new Open Processing sketch.
 Create a circle or square (w and h are the same) and declare a variable for ALL the parts and make the parts random(255) as was demonstrated to you.
 
 Name your sketch: RandomShapes
+
+<a href="/outline/#a-href-activities-activity-14-b-complete-activity-14-b-a">**STOP** Go back to the Outline</a>
+
 
 ## Activity 15
 
@@ -497,6 +528,8 @@ If you would like your creature to begin in the center of your screen, inside th
 Then, let’s make your creature begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]  Answer this question as a comment at the bottom of your program.
 
 Add an increment that would bring your creature from the bottom of the screen up on the y-axis.
+
+<a href="/outline/#a-href-activities-activity-15-b-complete-activity-15-b-a">**STOP** Go back to the Outline</a>
 
 
 ## Activity 16
@@ -526,5 +559,7 @@ Fill in the blanks in the following code to complete the boolean expressions.
 	} else {
 		println(________________);
 	}
+
+<a href="/outline/#a-href-activities-activity-16-b-complete-activity-16-b-a">**STOP** Go back to the Outline</a>
 
 .
