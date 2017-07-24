@@ -226,29 +226,7 @@ In that example, we assign the number 23 to the variable called ``x``.  In the f
 
 ### <a href="/activities/#activity-8"><b>Complete Activity 8</b></a>
 
-### System Variables
-
-*System Variables* are provided by the Processing language for you to use.  They give you access to information like the mouse position on the screen or the last key pressed on the keyboard.  *System Variables* are not variables that you define, they are set by Processing and you can read them from your sketch.
-
-```mouseX``` and ```mouseY``` are system variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
-
-	function setup() {
-	  createCanvas(windowWidth, windowHeight); 
-	  
-	} 
-
-	function draw() {
-	  background(100);  // moved down from setup() so we don't get trails
-	  ellipse(mouseX, mouseY, 20, 20);
-	}
-
-When you run this sketch, you will see a circle following the mouse.  Why? because the position of the ellipse is set using ```mouseX``` and ```mouseY```.  Every time we go through the ```draw()``` function and call ellipse, the variables ```mouseX``` and ```mouseY``` have the current mouse position.
-
-You will explore another way to use system variables in the next activity:
-
-### <a href="/activities/#activity-9"><b>Complete Activity 9</b></a>
-
-### <a href="/activities/#activity-9b"><b>Complete Activity 9B</b></a>
+### <a href="/activities/#activity-8-1"><b>Complete Activity 8.1</b></a>
 
 What do you think this next program does?
 
@@ -272,9 +250,33 @@ A circle of diameter 50 will first be drawn at position (100,100).  Then it will
 
 Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the new value will be stored until the next time it is used.
 
+### <a href="/activities/#activity-9"><b>Complete Activity 9</b></a>
+
 ### <a href="/activities/#activity-10"><b>Complete Activity 10</b></a>
 
+### System Variables
+
+*System Variables* are provided by the Processing language for you to use.  They give you access to information like the mouse position on the screen or the last key pressed on the keyboard.  *System Variables* are not variables that you define, they are set by Processing and you can read them from your sketch.
+
+```mouseX``` and ```mouseY``` are system variables that store the current mouse position.  If you look at the default sketch in <a href="http://www.openprocessing.org" target="_blank">www.openprocessing.org</a>, you will see them used there:
+
+	function setup() {
+	  createCanvas(windowWidth, windowHeight); 
+	  
+	} 
+
+	function draw() {
+	  background(100);  // moved down from setup() so we don't get trails
+	  ellipse(mouseX, mouseY, 20, 20);
+	}
+
+When you run this sketch, you will see a circle following the mouse.  Why? because the position of the ellipse is set using ```mouseX``` and ```mouseY```.  Every time we go through the ```draw()``` function and call ellipse, the variables ```mouseX``` and ```mouseY``` have the current mouse position.
+
+You will explore another way to use system variables in the next activity:
+
 ### <a href="/activities/#activity-11"><b>Complete Activity 11</b></a>
+
+### <a href="/activities/#activity-11-1"><b>Complete Activity 11.1</b></a>
 
 ## Operator Precedence
 

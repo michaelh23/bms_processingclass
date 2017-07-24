@@ -227,45 +227,27 @@ You may use the calculator on your computer to assist you.  To find it, (on Wind
  
 After you have incorporated x and y variables into all your x and y arguments in your code, your creature should look the same (as if nothing has changed because it shouldn’t have).  If it is not the same, what did you do wrong?
 
-# <a href="/outline/#a-href-activities-activity-8-b-complete-activity-8-b-a">**STOP** Go back to the Outline</a>
- 
+## Activity 8.1
+
+Take out graph paper.
+
+Draw an ice cream cone with one triangle and one ellipse for the ice cream and one ellipse for the cherry on top.  Indicate what colors the shapes should be.
+
+Write the code for your ice cream cone on the back of your graph paper or on the separate sheet of paper.
+
+Open a new sketch in open processing and enter your code.  When you run your code, does the cone look correct?  If not, fix your code.
+
+Once your code looks correct, create variables for all of your function arguments such as x,y positions, width and height, r,g,b for colors.
+
+Think about and be able to answer:
+
+- What's different about the ```w``` and ```h``` between the ice cream and the cherry?  Why?
+
+Save your sketch as "IceCreamCone"
+
+# <a href="/outline/#a-href-activities-activity-8-1-b-complete-activity-8-1-b-a">**STOP** Go back to the Outline</a>
+
 ## Activity 9
-
-Create a new Open Processing sketch.
-
-Open your sketch "icecreamcone".  Save as a Fork and name it icecreamcone_mXmY.
-
-Change your code so that the color of your ice cream changes based on the location of your mouse.
-
-Make sure the ice cream is *inside* the cone (not on top of the cone).
-
-### Discussion questions: 
-
-When you move the mouse, are there areas of the screen where the mouse doesn't change the ice cream color?  Why?
-
-- (Advanced/Not Required:  Check out the <a href="http://p5js.org/reference/#/p5/map">"map()"</a> function at p5js.org for a way around this...)
-
-Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
-
-## Activity 9B
-
-Open your sketch MyCreature_(name)__var.
-
-Now go back to the sketch of your creature that you modified in Activity 8.  Go to where you have your variables defined.  You set your variable ```x``` and your variable ```y``` to be equal to numbers.  Replace the numbers with the system variables ```mouseX``` and ```mouxeY``` as shown:
-
-	function draw() {
-		var x = mouseX;
-		var y = mouseY;
-
-		... # more code for your creature below here
-
-FORK this sketch and save it as "MyCreature_(name)__mXmY”
-
-Do all parts of your creature move together around your screen when you move your mouse?  Or do some parts have extended lines or change size and look odd when you move your mouse.  If your creature does not move all together, review your code and problem solve.
-
-# <a href="/outline/#a-href-activities-activity-9-b-complete-activity-9-b-a">**STOP** Go back to the Outline</a>
-
-## Activity 10
 
 Create a new Open Processing sketch.
 
@@ -289,9 +271,7 @@ Change the following program so that the circle moves across and down while it i
 
 Name your sketch:  MoveGrow
 
-# <a href="/outline/#a-href-activities-activity-10-b-complete-activity-10-b-a">**STOP** Go back to the Outline</a>
-
-## Activity 11
+## Activity 10
 
 Create a new Open Processing sketch.
 
@@ -301,7 +281,43 @@ Make your rectangle start off of the screen on the bottom left and move up to th
 
 Name your sketch:  AllVarChange
 
-# <a href="/outline/#a-href-activities-activity-11-b-complete-activity-11-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-10-b-complete-activity-10-b-a">**STOP** Go back to the Outline</a>
+
+## Activity 11
+
+Create a new Open Processing sketch.
+
+Open your sketch "icecreamcone".  Save as a Fork and name it icecreamcone_mXmY.
+
+Change your code so that the color of your ice cream changes based on the location of your mouse.
+
+Make sure the ice cream is *inside* the cone (not on top of the cone).
+
+### Discussion questions: 
+
+When you move the mouse, are there areas of the screen where the mouse doesn't change the ice cream color?  Why?
+
+- (Advanced/Not Required:  Check out the <a href="http://p5js.org/reference/#/p5/map">"map()"</a> function at p5js.org for a way around this...)
+
+Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
+
+## Activity 11.1
+
+Open your sketch MyCreature_(name)__var.
+
+Now go back to the sketch of your creature that you modified in Activity 8.  Go to where you have your variables defined.  You set your variable ```x``` and your variable ```y``` to be equal to numbers.  Replace the numbers with the system variables ```mouseX``` and ```mouxeY``` as shown:
+
+	function draw() {
+		var x = mouseX;
+		var y = mouseY;
+
+		... # more code for your creature below here
+
+FORK this sketch and save it as "MyCreature_(name)__mXmY”
+
+Do all parts of your creature move together around your screen when you move your mouse?  Or do some parts have extended lines or change size and look odd when you move your mouse.  If your creature does not move all together, review your code and problem solve.
+
+# <a href="/outline/#a-href-activities-activity-11-1-b-complete-activity-11-1-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 12
 
