@@ -20,11 +20,13 @@ Take the graph paper provided and draw the shapes that would be drawn by this co
 	9. ellipse(50, 50, 60, 60);
 	10. line(320, 20, 380, 80);
 
-<a href="/outline/#a-href-activities-activity-1-b-complete-activity-1-b-a">**STOP** Go back to the Outline</a>
-
 ## Activity 2
 
 Use Graph Paper.
+
+There are two parts to this activity.  **Part 1** is just like Activity 1.  For **Part 2**, turn your graph paper over and write the code for the shapes you see.
+
+### Part 1
 
 Take the graph paper provided and draw the shapes that would be drawn by this code:
 
@@ -39,21 +41,23 @@ Take the graph paper provided and draw the shapes that would be drawn by this co
 	triangle(70, 200, 130, 170, 110, 230);
 	point(50, 350);
 
+### Part 2
+
 Looking at the following image, write the code that would draw these ten shapes in their numbered order.  The first two answers should be the points at 1 and 2.  You do not need to write the code that would draw the red numbers themselves.
 
 ![Activity 2b](/images/activities/assignment2_graph.svg)
 
-<a href="/outline/#a-href-activities-activity-2-b-complete-activity-2-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-2-b-complete-activity-2-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 3
 
 Use your Notebook.
 
-Using the ```fill()``` and ```rect()``` functions, code the following shape.  Hint, it can be done with 4 rectangles and 3 fill calls however it can also be solved with only 3 rectangles.
+Using the ```fill()``` and ```rect()``` functions, code the following shape.  Hint, it can be done with 4 rectangles and 3 fill calls however it can also be solved with only 3 rectangles.  Assume this square is like our graph paper and is a 400x400 grid with (0,0) in the upper left corner.
 
 ![Exercise 1-4](/images/activities/exercise1-4.png)
 
-<a href="/outline/#a-href-activities-activity-3-b-complete-activity-3-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-3-b-complete-activity-3-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 4
 
@@ -83,13 +87,13 @@ What color will each of the following lines of code generate?
 
 	stroke(200, 50, 50);	_____________________________
 
-<a href="/outline/#a-href-activities-activity-4-b-complete-activity-4-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-4-b-complete-activity-4-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 5
 
 Use your Notebook.
 
-Rewrite the lines of code to make them correct:
+Rewrite the lines of code so they will work/run:
 
 
 	// 1.
@@ -142,7 +146,7 @@ Rewrite the lines of code to make them correct:
 
 	// _______________________________________________
 
-<a href="/outline/#a-href-activities-activity-5-b-complete-activity-5-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-5-b-complete-activity-5-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 6
 
@@ -150,7 +154,7 @@ Use graph paper and your notebook.
 
 On graph paper, design/draw a creature of your own using the shapes you have learned so far.  Color your creature including the outline colors.  **Name** your creature.
 
-Your creature can use:
+Your creature must use:
 
 - one rectangle
 - one ellipse
@@ -178,7 +182,7 @@ Remember that to comment out a line you do this:
 	rect(50, 50, 25, 25); // the rest of this line is a comment
 	// this is a comment below the rect function
 
-<a href="/outline/#a-href-activities-activity-6-b-complete-activity-6-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-6-b-complete-activity-6-b-a">**STOP** Go back to the Outline</a>
 
 
 ## Activity 7
@@ -193,11 +197,11 @@ If it doesn't run, try to determine what is wrong.  Don't forget to look at the 
 
 Save your sketch as "MyCreature_(name)__" with "name" replaced with the name of your creature.
 
-<a href="/outline/#a-href-activities-activity-7-b-complete-activity-7-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-7-b-complete-activity-7-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 8
 
-Open your creature sketch from Activity 7.  Add two variables `x` and `y` at the top of your draw function and set them to be equal to a somewhat central part of your creature.
+Open your creature sketch from Activity 7.  We are going to change your code so it will be easy to move your creature around on the screen by specifying the creature's overall x and y position.  Add two variables `x` and `y` at the top of your draw function and set them to be equal to a  central part of your creature.
  
 For example:
 
@@ -205,27 +209,35 @@ For example:
 		var x = 200;
 		var y = 150;
 
-		... # more code below here
+		... // more code below here
  
 Save the sketch from Activity 7 as a FORK and add “var” to the end of the name (as in "MyCreature_(name)__var").
- 
-Incorporate these x and y variable into your sketch for all the x and y arguments that you have used in your code.
+
+In all of the places where you specify a location such as the x and y position of a rectangle or ellipse, replace the fixed x and y position with an offset from the x and y variable.
+
+For example, if you are drawing a rectangle at (250,100) your code might start with:
+
+	rect(250,100,50,50);
+
+and become:
+
+	rect(x+50, y-50, 50,50);
  
 You may use the calculator on your computer to assist you.  To find it, (on Windows computers) click on the Windows icon in the lower left corner.  There should be a calculator option.
  
 After you have incorporated x and y variables into all your x and y arguments in your code, your creature should look the same (as if nothing has changed because it shouldn’t have).  If it is not the same, what did you do wrong?
 
-<a href="/outline/#a-href-activities-activity-8-b-complete-activity-8-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-8-b-complete-activity-8-b-a">**STOP** Go back to the Outline</a>
  
 ## Activity 9
 
 Create a new Open Processing sketch.
 
-Create a new sketch and draw an ice cream cone using a triangle and an ellipse.  The color of the ice cream should be influenced by the ```mouseX``` and ```mouseY``` variables.  I.e. the color of the ice cream should change when you move the mouse.
+Open your sketch "icecreamcone".  Save as a Fork and name it icecreamcone_mXmY.
+
+Change your code so that the color of your ice cream changes based on the location of your mouse.
 
 Make sure the ice cream is *inside* the cone (not on top of the cone).
-
-Save your sketch as "ice cream cone".
 
 ### Discussion questions: 
 
@@ -235,10 +247,9 @@ When you move the mouse, are there areas of the screen where the mouse doesn't c
 
 Is there a limit to the colors you can choose using ```mouseX``` and ```mouseY``` inside the ```fill()``` function?  Why?
 
-<a href="/outline/#a-href-activities-activity-9-b-complete-activity-9-b-a">**STOP** Go back to the Outline</a>
-
-
 ## Activity 9B
+
+Open your sketch MyCreature_(name)__var.
 
 Now go back to the sketch of your creature that you modified in Activity 8.  Go to where you have your variables defined.  You set your variable ```x``` and your variable ```y``` to be equal to numbers.  Replace the numbers with the system variables ```mouseX``` and ```mouxeY``` as shown:
 
@@ -250,13 +261,15 @@ Now go back to the sketch of your creature that you modified in Activity 8.  Go 
 
 FORK this sketch and save it as "MyCreature_(name)__mXmY”
 
-<a href="/outline/#a-href-activities-activity-9-b-complete-activity-9-b-a">**STOP** Go back to the Outline</a>
+Do all parts of your creature move together around your screen when you move your mouse?  Or do some parts have extended lines or change size and look odd when you move your mouse.  If your creature does not move all together, review your code and problem solve.
+
+# <a href="/outline/#a-href-activities-activity-9-b-complete-activity-9-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 10
 
 Create a new Open Processing sketch.
 
-Change the following program so that instead of the circle moving from left to right as in the class outline, the circle grows in size.
+Change the following program so that the circle moves across and down while it is getting bigger.  You may copy and paste the info below over your new sketch and finish writing your code from that.
 
 	var circleSize=5;
 	var circleX=100;
@@ -274,23 +287,21 @@ Change the following program so that instead of the circle moving from left to r
 		// fill in your code here
 	}
 
-Once that works, change your program so that the circle moves with the mouse and changes size with the mouse at the same time.	
-
 Name your sketch:  MoveGrow
 
-<a href="/outline/#a-href-activities-activity-10-b-complete-activity-10-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-10-b-complete-activity-10-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 11
 
 Create a new Open Processing sketch.
 
-Create one shape (ellipse or rect) and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
+Create a rectangle and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
 
-Next, make your background color change based on the position of the mouse and make your shape move two times faster across the X axis as it does on the Y axis.
+Make your rectangle start off of the screen on the bottom left and move up to the top right while growing at half the rate of speed shown in the outline example.
 
 Name your sketch:  AllVarChange
 
-<a href="/outline/#a-href-activities-activity-11-b-complete-activity-11-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-11-b-complete-activity-11-b-a">**STOP** Go back to the Outline</a>
 
 ## Activity 12
 
@@ -357,8 +368,6 @@ For each of the following examples, answer the questions.  It is recommended tha
 	// 3c. what is the final value of z:__________________
 
 	// 3d. what is the final value of b:__________________
-
-<a href="/outline/#a-href-activities-activity-12-b-complete-activity-12-b-a">**STOP** Go back to the Outline</a>
 
 
 ## Activity 13
@@ -489,7 +498,7 @@ For each of the following examples, answer the questions.  It is recommended tha
 	// 7c. What is the value of p at (c):
 	// 7d. What is the value of q at (d):
 
-<a href="/outline/#a-href-activities-activity-13-b-complete-activity-13-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-13-b-complete-activity-13-b-a">**STOP** Go back to the Outline</a>
 
 
 ## Activity 14
@@ -500,36 +509,34 @@ Create a circle or square (w and h are the same) and declare a variable for ALL 
 
 Name your sketch: RandomShapes
 
-<a href="/outline/#a-href-activities-activity-14-b-complete-activity-14-b-a">**STOP** Go back to the Outline</a>
-
 
 ## Activity 15
 
 Create a new Open Processing sketch.
 
-Open your creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  
+Open your creature code where you have incorporated the variables and it is now set on mouseX and mouseY.  This is the sketch named like:  "MyCreature_(name)__XY”.
 
 Save a Fork and name it RandomCreature.  
 
 Do the following:
  
-- Take out mouseX and mouseY and put in the original value for the var.
+- Take out the mouseX and mouseY and replace them with numeric values.
 
-- Set your framerate to 5 in `setup()`: `frameRate(5);`
+- Change the frame rate to 5 by adding a call to the `frameRate` function inside of `setup()`.  The call to `frameRate` should look like this: `frameRate(5);`
 
-- Choose a part of your creature that you want to make change color randomly.
+- Choose a part of your creature that you want to randomly change color.
 
-- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (ex:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.  Declare these variables just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable labels.
+- Declare variables R, G, B for the part you want to have change color randomly such as the eyes, legs, or whatever.  (for example:  `var eyeR =random(255); var eyeG = random(255); var eyeB = random(255);`.)  Declare these variables just one line above the part you want to change.  Then, replace the arguments for the fill with your new variable names.
 
 Does your creature now have a body part that changes colors randomly?
+
+To have your creature begin in the center of the screen, inside the `setup()` function, set x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
  
-If you would like your creature to begin in the center of your screen, inside the setup function, set your x to be equal to one-half the width of the screen:  `x = windowWidth/2;`
- 
-Then, let’s make your creature begin off the screen on the y.  What would you have to do with the Height to accomplish that?  [Hint: it would have to be declared in the setup also]  Answer this question as a comment at the bottom of your program.
+Then, let’s make your creature begin off the screen on the y.  What would you have to do with the y variable to accomplish that?  [Hint: it would have to be declared in the setup also]  Answer this question as a comment at the bottom of your program.
 
 Add an increment that would bring your creature from the bottom of the screen up on the y-axis.
 
-<a href="/outline/#a-href-activities-activity-15-b-complete-activity-15-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-15-b-complete-activity-15-b-a">**STOP** Go back to the Outline</a>
 
 
 ## Activity 16
@@ -560,6 +567,6 @@ Fill in the blanks in the following code to complete the boolean expressions.
 		println(________________);
 	}
 
-<a href="/outline/#a-href-activities-activity-16-b-complete-activity-16-b-a">**STOP** Go back to the Outline</a>
+# <a href="/outline/#a-href-activities-activity-16-b-complete-activity-16-b-a">**STOP** Go back to the Outline</a>
 
 .

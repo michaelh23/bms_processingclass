@@ -13,12 +13,14 @@ Note that in Processing, we set the grid origin (0,0) point in the upper left co
 
 The `point` function draws a point at the given x and y location on the screen.  Coordinates are *always* given in (x,y) order:
 
+	point(x,y);
 	point(4,5);
 
 ![Figure 1-5](/images/figures/PointDiagram.png)
 
 The `line` function draws a line between two x and y locations on the screen:
 
+	line(x1,y1, x2,y2);
 	line(1,3,8,3);
 
 The first two arguments "1,3" are the start point of the line and the last two arguments "8,3" are the end point of the line:
@@ -31,24 +33,27 @@ The `triangle` function draws a triangle.  The function takes 6 parameters descr
 
 You call the triangle function like this:
 
+	triangle(x1,y1, x2,y2, x3,y3);
 	triangle(200,100,  300,300,  100,300);
 
-The `rect` function draws a rectangle.  The upper left corner of the rectangle is specified by the x and y parameters and then the width and height.
+The `rect` function draws a rectangle.  The **upper left corner** of the rectangle is specified by the x and y parameters and then the width and height.
 
 ![Rectangle Arrows](/images/figures/rect_arrows.svg)
 
 Calling the `rect` function looks like this with 2,3 as the x and y position of the rectangle with a width of 5 and a height of 4:
 
+	rect(x,y,w,h);
 	rect(2,3,5,4);
 
 ![Figure 1-7](/images/figures/RectDiagram.png)
 
-The `ellipse` function is similar to `rect` except it draws *circles* and *ellipses*.  This time, the center of the ellipse is specified by the x and y parameters and then the width and height.
+The `ellipse` function is similar to `rect` except it draws *circles* and *ellipses*.  This time, the **center** of the ellipse is specified by the x and y parameters and then the width and height.
 
 ![Ellipse Arrows](/images/figures/ellipse_arrows.svg)
 
 Calling the `ellipse` function looks like this example with 3,3 as the x and y position of the ellipse with a width of 5 and height of 5:
 
+	ellipse(x,y,w,h);
 	ellipse(3,3,5,5);
 
 ![Figure 1-10](/images/figures/EllipseCenterDiag.png)
@@ -95,16 +100,26 @@ RGB color can be understood as all colors that can be made up of shining a Red, 
 
 Adding RGB to what we did above wtih greyscale:
 
+	stroke(R,G,B);
+	background(R,G,B);
+	fill(R,G,B);
+
 	stroke(255,0,0); // gives a red outline to your shapes
 	background(0,255, 0);  // gives you a green background
 	fill(0, 0, 255); // fills the next shapes with blue
 
-And rewriting the above with greyscale using RGB:
+And rewriting the above with greyscale using RGB (NOTE that for grey colors, all three of R, G, and B will be the same value):
 
 	stroke(50, 50, 50); // gives you a dark grey outline to your shapes
 	background(255, 255, 255); // gives you a white background
 	background(128, 128, 128); // gives you a medium grey background
 	fill(0, 0, 0); // fills the next shapes with black
+
+Other functions available that will affect drawing include:
+
+	noStroke(); // this takes out the outline of your shape
+	strokeWeight(5); // this makes your shape outline the width specified
+	noFill(); // this prevents a color from filling shapes
 
 The following code:
 
@@ -163,9 +178,9 @@ To start coding with a new sketch, we start with a function, ``setup`` to get ev
 	    createCanvas(windowWidth, windowHeight);  
 	} 
  
-This sets the size of the window our drawings will appear.  Although we used a 400x400 graph grid, once we write our code it’s useful to have a much bigger window than to be restricted to a small grid.
+This sets the size of the window in which our drawings will appear.  When working on paper we used a 400x400 graph paper grid.  When we are writing code to appear on screen, we want to use the entire screen.  The ```createCanvas(...)``` function sets the drawing area for our sketch.  The variables ```windowWidth``` and ```windowHeight``` are pre-set with the width and height of the entire screen.  So calling ```createCanvas(windowWidth, windowHeight);``` sets the drawing area to the entire screen.
  
-Then, we need to add our code to a function called ``draw``:
+Then, we need to add our code to a function called ``draw``.  Be sure to keep your code between the opening and closing curly braces ```{ }```  If you **don't** put the code inside of the curly braces, your code won't work right:
  
 	function draw() {
 	  rect (200, 200, 50, 50);		//head
@@ -198,13 +213,9 @@ Remember:
 
 So far you have been making shapes by calling functions like ``rect(...)`` or ``ellipse(...)`` and entering exact numbers for each of the function arguments.
 
-You can also use variables to store information to be used later.  A variable is like a cubbyhole in the computer memory where you can store things.
-
-You create a variable like this:
+You can also use variables to store information to be used later.  A variable is like a named cubbyhole in the computer memory where you can store things.  You tell the computer about a variable by using the keyword ```var``` and putting a variable name after it.  After you have declared it, you can assign values to the variable using the ```=``` sign like this:
 
 	var x;
-
-That creates a variable called x that you can put numbers or letters into:
 
 	x = 23;
 	rect(x, 25, 50, 50);
@@ -267,7 +278,7 @@ Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the
 
 ## Operator Precedence
 
-When you add or subtract or multiply, the +, -, *, and / (for divide) symbols are called *operators*.
+When you add, subtract,  multiply, or divide,  the +, -, *, and / (for divide) symbols are called *operators*.
 
 You may know from math that some operators are always done before others (for example, the PEMDAS mnemonic).  For example:
 
@@ -285,7 +296,7 @@ Here are some examples.  Make sure you understand why each variable has the stat
 	a = 10;
 	b = 20;
 	y = a + b; // y equals 30
-	x = (y - 10) * 20; // before, x equaled 5, now x equals 400
+	x = (y - 10) * 20; // before, x equalled 5, now x equals 400
 	x = x * 5; // now x = 2000
 
 The next two activities will touch on operator precedence though they are mostly about following the value of variables.  Remember the computer will execute one line at a time.  If variable values are changed, the computer will use the most recent value of the variable.
