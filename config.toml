@@ -1,4 +1,4 @@
-baseurl = "http://processingclass.michaelhelmke.org/"
+baseurl = "http://bmsprocessing.course23.com/"
 languageCode = "en-us"
 title = "Ms Elwell's Coding Class "
 theme = "hugo-material-docs"

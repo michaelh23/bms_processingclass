@@ -554,8 +554,31 @@ Add an increment that would bring your creature from the bottom of the screen up
 
 # <a href="/outline/#a-href-activities-activity-15-b-complete-activity-15-b-a">**STOP** Go back to the Outline</a>
 
-
 ## Activity 16
+
+Using an if statement, move a square across a window by incrementing a variable.  Start the shape at x coordinate 0 and use an if statement to have it stop at coordinate 100.
+
+Save sketch as IF1
+
+# <a href="/outline/#a-href-activities-activity-16-b-complete-activity-16-b-a">**STOP** Go back to the Outline</a>
+
+## Activity 17
+
+Write a program that splits your screen horizontally so that when your mouse is on the top third of the screen, the screen is RED; when it’s below the top third your screen turns GREEN.
+
+Save sketch as IFELSE1
+
+# <a href="/outline/#a-href-activities-activity-17-b-complete-activity-17-b-a">**STOP** Go back to the Outline</a>
+
+## Activity 18
+
+Create a program using “else if” to make the following happen:
+
+If the mouse is on the left third of the window, draw a white background; if the mouse is in the middle third, draw a gray background; otherwise, draw a black background.
+
+Save sketch as elseif1
+
+## Activity 19
 
 Think about a grading system where numbers are turned into letters.
 
@@ -567,7 +590,7 @@ Use this grading scale:
 - D - 60 to 69&
 - F - 59% or below
 
-Fill in the blanks in the following code to complete the boolean expressions.
+Fill in the blanks in the following code to complete the conditions.
 
 	var grade = random(0,100);
 
@@ -583,6 +606,152 @@ Fill in the blanks in the following code to complete the boolean expressions.
 		println(________________);
 	}
 
-# <a href="/outline/#a-href-activities-activity-16-b-complete-activity-16-b-a">**STOP** Go back to the Outline</a>
+## Activity 20
+
+To further practice using if, else, else if, please make the following happen.
+
+1.	Create variables to represent red, green, and blue (r, g, b perhaps)
+2.	Continuously draw the background based on those colors: background(r, g, b)
+3.	If the mouse is on the right-hand side of the screen, increment the value of r; if it’s on the left-hand side decrement the value of r.
+4.	Constrain the value r to be within 0 and 255.
+
+Save sketch as elseif3
+
+## Activity 21
+
+On a piece of notebook paper, please answer for both Problem 1A-C and 2A-C.
+
+Problem #1:  Determine if a number is between 0 and 25, 26 and 50, or greater than 50.
+
+	var x = 75;
+
+	if(x > 50) {
+		println(x + ">50!");
+	} else if(x > 25) {
+		println(x + ">25!");
+	} else {
+		println(x + "<=25!");
+	}
+
+	// Output: ___________________
+
+	var x = 75;
+
+	if(x > 25) {
+		println(x + ">25!");
+	} else if(x > 50) {
+		println(x + ">50!");
+	} else {
+		println(x + "<=25!");
+	}
+
+	// Output: ___________________
+
+Although the program syntax is correct, what is the problem with the second block of code?
+
+Problem #2:  If a number is 5, change it to 6.  If a number is 6, change it to 5.
+
+	var x = 5;
+	println("x is now: " + x);
+	if (x == 5) {
+		x = 6;
+	}
+	if (x == 6) {
+		x = 5;
+	}
+	println("x is now: " + x);
+
+	// Output: _______________
+
+
+	var x = 5;
+	println("x is now: " + x);
+	if (x == 5) {
+		x = 6;
+	} else if (x == 6) {
+		x = 5;
+	}
+	println("x is now: " + x);
+
+	// Output: _______________
+
+Although the program syntax is correct, what is the problem with the first block of code?
+
+# <a href="/outline/#a-href-activities-activity-21-b-complete-activity-21-b-a">**STOP** Go back to the Outline</a>
+
+## Activity 22
+
+Change the code so there is only one “if” statement and && to make the rectangle appear in the lower right corner once your mouse is there.
+
+Save sketch as:  And1
+
+# <a href="/outline/#a-href-activities-activity-22-b-complete-activity-22-b-a">**STOP** Go back to the Outline</a>
+
+## Activity 23
+
+Write your answers on a piece of notebook paper.
+
+Given ```x == 5``` and ```y == 6```, are the following expressions true or false?
+
+1.	 !(x > 6)
+2.	 (x == 6 && x == 5)
+3.	 (x == 6 || x == 5)
+4.	 (x > -1 && y < 10)
+5.	 !(x < 7)
+6.   (x != y || y < 5)
+7.   (x == 5 && (y > 6 || x < y))
+
+Although the syntax is correct, what is flawed about the following expressions?
+
+8.	 (x > 10 && x < 5)
+9.	 (y < 10 && y < 4)
+10.   (x > y && y > x)
+
+## Activity 24
+
+Write a program that implements a simple rollover.  If the mouse is over a rectangle, the rectangle changes color.  
+
+Here’s a start:
+
+	var x = 50;
+	var y = 50;
+	var w = 100;
+	var h = 75;
+
+	function setup() {
+	    createCanvas(windowWidth, windowHeight);
+	}
+
+	function draw() {
+		background(255);
+		stroke(0);
+
+	if ( _____ && ______ && ______ && ______ ) {
+		______________
+
+	} _________ {
+		___________________
+	}
+
+	rect(x, y, w, h);
+
+}
+
+Save Sketch as:  SingleRollover
+
+## Activity 25
+
+Using your entire screen, divide your screen into four quarters.
+Write your program so that:
+
+- If your mouse is in the top left corner, that section turns red.
+- If the mouse is in the top right corner, that section turns green.
+- If the mouse is in the lower left corner, that section turns blue.
+- If the mouse is in the lower right corner, that section turns black.
+
+Save sketch as:  FourSquareRollover
+
+# <a href="/outline/#a-href-activities-activity-25-b-complete-activity-25-b-a">**STOP** Go back to the Outline</a>
+
 
 .

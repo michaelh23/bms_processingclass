@@ -228,7 +228,56 @@ In that example, we assign the number 23 to the variable called ``x``.  In the f
 
 ### <a href="/activities/#activity-8-1"><b>Complete Activity 8.1</b></a>
 
+### More about Variables
+ 
+One can name variables whatever you want to.  To keep it simple, we’ve used the variable ```x``` to represent the x position in our code and ```y``` to represent the y position in our code.  We could expand on that and use a variable named ```w``` to represent the width and ```h``` to represent the height.  And to further continue this, ```r```, ```g```, ```b``` could also be declared as variables to represent color.
+ 
+Thinking further, however, what exactly does ```w``` and ```h``` do to our object?  Does it change the position of our object or does it change the size of our object?  Think about this.
+ 
+And, what exactly does the ```x``` and ```y``` do to our object?  Could we have an ellipse and a rectangle and use ```x``` and ```y``` both to represent the x and y position? 
+ 
+Might we want to name our variable for our ellipse ```circleX``` and ```circleY``` rather than simply ```x``` and ```y```?  And then make variables for our rectangle ```rectX``` and ```rectY``` so that we can assign different values for these two shapes?
+ 
+For example:
+ 
+If our code states:
+ 
+	rect(100, 200, 140, 130);
+	ellipse(300, 300, 100, 100);
+ 
+could we declare the following variables and use them as follows:
+
+	function draw () {
+		var circleX = 300;
+		var circleY= 300;
+		var rectX = 100;
+		var rectY = 200;
+		 
+		rect(rectX, rectY, 140, 130);
+		ellipse(circleX, circleY, 100, 100);
+	}
+ 
+Would that work?
+ 
+Why would we consider doing this and not simply use ```x``` and ```y``` for both ellipse and rect?  Think about that awhile.
+ 
+Thinking about the ```w``` and ```h```, did you determine how these arguments affect your shapes?  Might you be able to use a variable named ```size``` in the width and height arguments?  What shape would that always be if you did?  Why?
+ 
+In the code above, you could declare:
+ 
+	var Size = 100
+
+and then change your ellipse code to include:
+ 
+	ellipse(circleX, circleY, Size, Size);
+ 
+You may be wondering why it’s so important to understand variables and what they mean and what they do.  Well let’s continue to explore.
+ 
+Maybe I want to grow (size) my object automatically, or have my object move across the screen without my help.  How would I be able to do that if not for variables? 
+
 What do you think this next program does?
+
+NOTE:  The variables are now declared outside the DRAW function.  Why is that?  Will it matter where variables are declared?  Again, think about WHY things are happening; why does the location or order of your code matter.
 
 	var circleX = 100;
 	var circleY = 100;
@@ -246,9 +295,9 @@ What do you think this next program does?
 		circleX = circleX + 1
 	}
 
-A circle of diameter 50 will first be drawn at position (100,100).  Then it will move to the right as ``circleX`` is increased.  Each time the system calls the ``draw()`` function, ``circleX`` will be increased by 1.
+A circle of diameter 50 will first be drawn at position (100,100).  Then it will move to the right as ```circleX``` is increased.  Each time the system calls the ```draw()``` function, ```circleX``` will be increased by 1.
 
-Every time ``circleX`` gets assigned a new value in the ``draw()`` function, the new value will be stored until the next time it is used.
+Every time ```circleX``` gets assigned a new value in the ```draw()``` function, the new value will be stored until the next time it is used.  Because the variable ```circleX``` is declared outside of the ```draw()``` function, the value of the variable is saved between call to ```draw()```.  If it was declared inside ```draw()```, it would get initialized/overwritten each time ```draw()``` was called.
 
 ### <a href="/activities/#activity-9"><b>Complete Activity 9</b></a>
 
@@ -330,8 +379,226 @@ The random() function requires two arguments.  It returns a random number rangin
 ### <a href="/activities/#activity-15"><b>Complete Activity 15</b></a>
 
 
-## Booleans and if/else Statements
+## Conditionals - If, Else, Else If
+
+### Boolean Expressions
+
+A Boolean expression (named for the mathematician George Boole) is an expression that can be either `true` or `false`.
+
+For example:
  
+- My favorite color is blue == true
+- I am afraid of the dark == false
+- Coding is fun after all == true
+ 
+In the logic of computers, we test relationships between numbers:
+ 
+	15 is greater than 20 == false
+	5 equals 5 == true
+	32 is less than or equal to 33 == true
+ 
+let’s think of this in terms of code and variables:
+ 
+	x > 20 – depends on the current value of x
+	y == 5 – depends on the current value of y
+	z <= 33 – depends on the current value of z
+ 
+The following are standard boolean operations in Processing:
+ 
+	>    greater than
+	<    less than
+	>=   greater than or equal to
+	<=   less than or equal to
+	==   equal to
+	!=   not equal to
+
+### If
+
+Conditionals operate within the sketch as questions.  Is 30 greater than 10?  If the answer is yes (i.e., true), you can choose to execute certain instructions (such as draw a rectangle); if the answer is no (i.e., false), those instructions are ignored.  This introduces the idea of branching; depending on various conditions, the program can follow different paths.
+
+With the question, if the mouse is on the left side of the screen, draw a rectangle on the left side of the screen, you would code it as follows:
+
+	function setup() {
+	    createCanvas(windowWidth, windowHeight); 
+	} 
+
+	function draw() {
+	    background(0);  
+	    if (mouseX < windowWidth/2) { 
+
+	     fill(255);
+	     rect(0, 0, windowWidth/2, windowHeight);
+	    }  
+	}
+
+In the above code, remember that ```mouseX``` is a system variable that always holds the current X coordinate of the mouse.  ```windowWidth/2``` is the X coordinate of 1/2 of the screen.  Together, ```mouseX < windowWidth/2``` is true when the X position of the mouse is on the left half of the screen.
+
+### <a href="/activities/#activity-16"><b>Complete Activity 16</b></a>
+
+### Else
+
+This can be expanded with the keyword “else” to include code that is executed if the conditional expression is false.  This is the equivalent of “otherwise, do such and such.”
+
+We can eliminate the rect in our code above by using IF ELSE and only background and no fill. See the example below:
+
+	function setup() {
+	    createCanvas(windowWidth, windowHeight); 
+	} 
+
+	function draw() {
+	    if (mouseX < windowWidth/2) {
+	        background(255);
+	    } else {
+	        background(0);
+	    }
+	}
+
+Pay attention to the format and do not forget the importance of the opening and closing curly brackets {  } throughout.  Indenting your code in the same style as the example also helps your code be readable.  If the same code is written as follows:
+
+	function setup() {
+	createCanvas(windowWidth, windowHeight); 
+	} 
+
+	function draw() {
+	if (mouseX < windowWidth/2) {
+	background(255);
+	} else {
+	background(0);
+	}
+	}
+
+it becomes much harder to see where the conditionals are.  **Don't write code that way**.  Always indent your code nicely.
+
+### <a href="/activities/#activity-17"><b>Complete Activity 17</b></a>
+
+### Else If
+
+To test multiple conditions, you can use “else if”.  When “else if” is used, the conditional statements are evaluated in the order presented.  As soon as one condition is found to be true, the corresponding code is executed and the remaining conditions are ignored.
+
+Code:
+
+	If (condition #1) {
+		//code to execute if condition #1 is true
+	} else if (condition #2) {
+		//code to execute if condition #2 is true
+	} else if (condition #) {
+		//code to execute if Boolean expression # is true
+	] else {
+		//code to execute if none of the above are true
+	}
+
+Flow Chart demonstrating the same thing:
+
+![Figure 5-3](/images/figures/Figure5-3.png)
+
+### <a href="/activities/#activity-18"><b>Complete Activity 18</b></a>
+
+### <a href="/activities/#activity-19"><b>Complete Activity 19</b></a>
+
+### <a href="/activities/#activity-20"><b>Complete Activity 20</b></a>
+
+### <a href="/activities/#activity-21"><b>Complete Activity 21</b></a>
+
+### Logical Operators
+
+Hopefully you now understand simple ```if``` statements.  Now let's look at including more conditions in an expression.
+
+#### Logical And:  ```&&```
+
+If my temperature is greater than 98.6 OR I have a rash on my arm, take me to the doctor.
+If I am stung by a bee AND I am allergic to bee stings, take me to the doctor.
+
+In programming:  If the mouse is on the right side of the screen AND the mouse is on the bottom of the screen, draw a rectangle in the bottom right corner.
+
+Based on what you learned about “if’ statements, you realize you could write your code as follows:
+
+	if (mouseX > windowWidth/2) {
+		if (mouseY > windowHeight/2) {
+			Fill(255);
+			Rect(windowWidth/2, windowHeight/2, windowWidth/2, windowHeight/2);
+		}
+	}
+
+In this case you would have to get a true answer for TWO if statements before the code is executed.  This works, but there’s a simpler way to do it using “logical and” which is written using two ampersands (&&).
+
+### <a href="/activities/#activity-22"><b>Complete Activity 22</b></a>
+
+#### Logical Or: ```||```
+
+And, ```!```, logical Not.
+
+If my temperature is NOT greater than 98.6, I won’t call in sick to work.
+If I am stung by a bee AND I am NOT allergic to bee stings, I’ll be fine!
+
+In programming:  If the mouse if NOT pressed, draw a circle; otherwise if mouse IS pressed, draw a square.
+
+	if (!mouseIsPressed) {
+		ellipse(windowWidth/2, windowHeight/2, 100, 100);
+	} else {
+		rect(windowWidth/2, windowHeight/2, 100, 100);
+	}
+
+How could you write this code without the NOT so that if the mouse is pressed, draw a square; otherwise draw a circle?
+
+Here are your newly learned Logical Operators:
+
+	&&	logical AND
+	||	logical OR
+	!	logical NOT
+
+### <a href="/activities/#activity-23"><b>Complete Activity 23</b></a>
+
+### <a href="/activities/#activity-24"><b>Complete Activity 24</b></a>
+
+### <a href="/activities/#activity-25"><b>Complete Activity 25</b></a>
+
+### Rollover Button
+
+You may be thinking “Can’t I just select ‘add button’ from a menu that already exists?” “Why do I have to do things manually?”  Practicing how to program buttons, rollovers, and sliders is a way to learn the basics of variables and conditionals.  It is good to care about and be interested in developing new interfaces and to be able to understand how to build interfaces from scratch is an excellent skill to have.  So, let’s program a button.
+
+A button can either be true or false.  Press the button, turn the switch on; press again, turn it off.  They system variable ```mouseIsPressed``` is true when the mouse is pressed and false when the mouse is not pressed.
+
+In the code below, what do you think will happen?  Walk through it carefully; it should make sense.
+	
+	var button = false;
+	var x = 50;
+	var y = 50;
+	var w = 100;
+	var h = 75;
+
+	function setup() {
+		createCanvas(windowWidth, windowHeight);
+	}
+
+	function draw() {
+
+		if(mouseIsPressed && mouseX > x && mouseX < (x + w) &&
+			mouseY > y && mouseY < (y + h)) {
+			button = true;
+		} else {
+			button = false;
+		} 
+
+		if (button) {
+			background(255);
+			stroke(0);
+		} else {
+			background(0);
+			stroke(255);
+		}
+
+		fill(175);
+		rect(x, y, w, h);  
+	}
+
+What you will see is that if the mouse is pressed inside the rectangle, the button is true and the background will turn white.  Otherwise the button is false and the background will be black.  In this case, the button is only on while you press and turns off when you let go.  How can you make the button operate like a switch?
+
+In order to toggle, you need to use the function ```mousePressed```.  Note this is different than the system variable ```mouseIsPressed```.  You will also need a variable to store the state of the button, whether it is on or off which you can store as ```true``` or ```false```.
+
+<!--
+
+### old material
+
 A Boolean expression (named for the mathematician George Boole) is an expression that can be either `true` or `false`.
 
 For example:
@@ -427,7 +694,7 @@ To continue our example above, we could write the following:
 	function draw() {
         if (mouseX < windowWidth/3) {
 			background(255);
-        } else if (mouseX < 2*windowWidth/3 {
+        } else if (mouseX < 2*windowWidth/3) {
 			background(127);
         } else {
 			background(0);
@@ -436,7 +703,7 @@ To continue our example above, we could write the following:
  
 ![Figure 5-4](/images/figures/Figure5-4.png)
 
-### <a href="/activities/#activity-16"><b>Complete Activity 16</b></a>
-
+### <a href="/activities/#activity-19"><b>Complete Activity 19</b></a>
+-->
 
 .
