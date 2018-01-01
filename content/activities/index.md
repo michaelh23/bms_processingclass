@@ -195,7 +195,8 @@ Make sure you put your code inside the draw function (look for `function draw()`
 
 If it doesn't run, try to determine what is wrong.  Don't forget to look at the "Console" to check for errors reported there.
 
-Save your sketch as "MyCreature_(name)__" with "name" replaced with the name of your creature.
+Save your sketch and replace "My Sketch" with "MyCreature_(name)__" with "name" replaced with the name of your creature.
+
 
 # <a href="/outline/#a-href-activities-activity-7-b-complete-activity-7-b-a">**STOP** Go back to the Outline</a>
 
@@ -231,17 +232,17 @@ After you have incorporated x and y variables into all your x and y arguments in
 
 Take out graph paper.
 
-Draw an ice cream cone with one triangle and one ellipse for the ice cream and one ellipse for the cherry on top.  Indicate what colors the shapes should be.
+Draw an ice cream cone with one triangle and one ellipse for the ice cream and one ellipse for the cherry on top.  Color your drawing.
 
-Write the code for your ice cream cone on the back of your graph paper or on the separate sheet of paper.
+Write the code for your ice cream cone on the separate sheet of paper.
 
 Open a new sketch in open processing and enter your code.  When you run your code, does the cone look correct?  If not, fix your code.
 
-Once your code looks correct, create variables for all of your function arguments such as x,y positions, width and height, r,g,b for colors.
+Once your code looks correct, take out another sheet of paper and create variables for all of your function arguments such as x,y positions, width and height, r,g,b for colors.
 
-Think about and be able to answer:
+Then, incorporate your variables in your open processing sketch.  
 
-- What's different about the ```w``` and ```h``` between the ice cream and the cherry?  Why?
+Turn in stapled your graph, regular code, and code with variables.
 
 Save your sketch as "IceCreamCone"
 
@@ -277,7 +278,7 @@ Create a new Open Processing sketch.
 
 Create a rectangle and declare variables for all the arguments needed.  For example:  x, y, w, h, fillColor, backgroundColor, change.
 
-Make your rectangle start off of the screen on the bottom left and move up to the top right while growing at half the rate of speed shown in the outline example.
+Make your rectangle start off of the screen on the bottom left and move up to the top right while growing at half the rate of speed shown in the outline example.  Also, make the color of the rectangle change as it moves up.
 
 Name your sketch:  AllVarChange
 
@@ -753,5 +754,40 @@ Save sketch as:  FourSquareRollover
 
 # <a href="/outline/#a-href-activities-activity-25-b-complete-activity-25-b-a">**STOP** Go back to the Outline</a>
 
+## Activity 26
+
+
+Make a small ellipse or rect at position x = 0 so that it begins on the left side of your screen.  Using variable named button and the system function mousePressed, write a program that makes your ellipse or rect only move across the screen while you press your mouse.
+
+### Reversing Polarity (direction)
+ 
+When I want to reverse the polarity of a number, I mean that I want a positive number to become negative and a negative number to become positive.  This is achieved by multiplying by -1.   Remember this is how it works… some examples:
+ 
+    -5 * -1 = 5
+     5 * -1 = -5
+     1 * -1 = -1
+    -1 * -1 = 1
+ 
+If my object moves to the right edge, I want it to stop and move to the left edge and continue to bounce off both edges.    So, if my variable x is greater than the windowWidth or if my variable x is less than zero, I want to reverse the speed.
+ 
+    if((x > windowWidth) || (x < 0) {
+                speed = speed * -1;
+    }
+
+## Activity 27
+
+Create a small ball using a speed variable.  Make it so the ball goes right to the edge of the screen and when it gets there, it automatically goes left to the edge of your screen and when it gets there, it goes back to the right… 
+ 
+Save sketch as:  bouncy ball 1
+
+## Activity 28
+
+Partner activity.
+ 
+Make your bouncing ball1 ball move vertically as well as horizonally.  Also, change the size and/or color of the ball based on certain conditions?  And then, make the ball speed up or slow down in addition to changing direction.
+ 
+Save sketch as:  bouncy ball 2
+
+# <a href="/outline/#a-href-activities-activity-28-b-complete-activity-28-b-a">**STOP** Go back to the Outline</a>
 
 .

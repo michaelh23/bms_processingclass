@@ -1,4 +1,4 @@
-baseurl = "http://bmsprocessing.course23.com/"
+baseurl = "http://processingclass.michaelhelmke.org/"
 languageCode = "en-us"
 title = "Ms Elwell's Coding Class "
 theme = "hugo-material-docs"
@@ -62,11 +62,6 @@ googleAnalytics = ""
     name    = "Resources"
     url     = "resources/"
     weight  = 30
-
-[[menu.main]]
-    name    = "Contact Us"
-    url     = "https://www.course23.com/contact/"
-    weight  = 40
 
 [blackfriday]
 	smartypants	= true

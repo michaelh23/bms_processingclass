@@ -595,6 +595,12 @@ What you will see is that if the mouse is pressed inside the rectangle, the butt
 
 In order to toggle, you need to use the function ```mousePressed```.  Note this is different than the system variable ```mouseIsPressed```.  You will also need a variable to store the state of the button, whether it is on or off which you can store as ```true``` or ```false```.
 
+### <a href="/activities/#activity-26"><b>Complete Activity 26</b></a>
+
+### <a href="/activities/#activity-27"><b>Complete Activity 27</b></a>
+
+### <a href="/activities/#activity-28"><b>Complete Activity 28</b></a>
+
 <!--
 
 ### old material
